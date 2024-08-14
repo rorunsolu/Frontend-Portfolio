@@ -1,0 +1,41 @@
+@import "styles/style.scss";
+
+/* ------------ Header Styles ------------ */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 1rem;
+
+    padding: 10rem 0;
+
+    @media (width <= 1200px) {
+        //padding: 10rem 0;
+    }
+
+    @media (width <= 600px) {
+        padding: 5rem 0;
+    }
+
+    &__image-wrapper {
+        
+    }
+
+    img {
+        max-width: 10rem;
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-weight: 700;
+
+        color: $black;
+    }
+
+    span {
+        color: $blue;
+    }
+}

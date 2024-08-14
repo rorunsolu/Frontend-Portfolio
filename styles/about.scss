@@ -1,0 +1,25 @@
+@import "styles/style.scss";
+
+/* ------------ About Styles ------------ */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &__title {
+    }
+
+    &__description {
+    }
+
+    &__image-wrapper {
+    }
+
+    img {
+        border-radius: 1rem;
+        max-width: 40rem;
+        
+    }
+}

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- Modern Normalize -->
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
+        /modern-normalize.min.css" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+    <title>Vite App</title>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="container--nav nav">
+
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+        </ul>
+
+        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
+        </button>
+        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
+        </button>
+
+      </div>
+    </nav>
+
+    <header id="header">
+
+      <div class="container header">
+
+        <img class="header__image" src="./images/ray-2.jpg" alt="image of Ray Orunsolu">
+
+        <h1 class="header__title">Hi, <span>I'm Ray <span class="wave">👋</span></span><br>a Frontend Developer.</h1>
+
+        <div class="buttons-wrapper">
+          <a class="button" href="#projects">My Work</a>
+          <a class="button button--secondary" href="#offer">Services</a>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <section id="projects">
+
+        <div class="container projects">
+
+          <h2 class="projects__title">My Projects</h2>
+          <p class="projects__description">
+            Here are some projects I've worked on. These projects are a great way for me to showcase my skills and also
+            to keep myself busy when I'm not working on client projects.
+          </p>
+
+          <div class="projects__card-grid">
+
+            <article class="projects__card">
+              <img class="projects__card-image" src="./images/photography.jpg" alt="image of a project">
+
+              <div class="projects__card-tag-container">
+                <p class="projects__card-tag">JavaScript</p>
+                <p class="projects__card-tag">HTML</p>
+                <p class="projects__card-tag">CSS</p>
+              </div>
+
+              <h3 class="projects__card-title">Photography Website</h3>
+            </article>
+
+            <article class="projects__card">
+              <img class="projects__card-image" src="./images/holiday.jpg" alt="image of a project">
+
+              <div class="projects__card-tag-container">
+                <p class="projects__card-tag">JavaScript</p>
+                <p class="projects__card-tag">HTML</p>
+                <p class="projects__card-tag">CSS</p>
+              </div>
+
+              <h3 class="projects__card-title">Holiday Website</h3>
+            </article>
+
+            <article class="projects__card">
+              <a><img class="projects__card-image" src="./images/business-coach.jpg" alt="image of a project"></a>
+
+              <div class="projects__card-tag-container">
+                <p class="projects__card-tag">JavaScript</p>
+                <p class="projects__card-tag">HTML</p>
+                <p class="projects__card-tag">CSS</p>
+              </div>
+
+              <h3 class="projects__card-title">Business Coaching Website</h3>
+            </article>
+
+            <article class="projects__card">
+              <img class="projects__card-image" src="./images/game-store.jpg" alt="image of a project">
+
+              <div class="projects__card-tag-container">
+                <p class="projects__card-tag">JavaScript</p>
+                <p class="projects__card-tag">HTML</p>
+                <p class="projects__card-tag">CSS</p>
+              </div>
+
+              <h3 class="projects__card-title">Game Store Website</h3>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="about">
+
+        <div class="container about">
+
+          <h2 class="about__title">About Me</h2>
+          <p class="about__description">Hi there! I'm Ray, a frontend developer based in London. I'm passionate about
+            building beautiful, functional and responsive websites that provide a great user experience. I'm always
+            looking for new challenges and opportunities to expand my skillset.</p>
+          <img class="about__image" src="./images/ray.jpg" alt="image of Ray">
+
+        </div>
+
+      </section>
+
+      <section id="offer">
+
+        <div class="container offer">
+
+          <h2 class="offer__title">What I Can Offer</h2>
+          <p class="offer__description">Whether you need a website for your business, a personal portfolio, or a
+            game, I can help you build it. I can provide web design and development services tailored to your
+            specific needs. From creating a visually appealing and responsive website layout to coding the
+            functionality and interactivity, I can work with you to bring your vision to life.</p>
+
+          <div class="offer__card-grid">
+
+            <img class="offer__image" src="./images/placeholder.jpg" alt="image of a project">
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Modular Code</h3>
+              <p class="offer__card-description">Clean, maintainable, and reusable code that can be easily
+                integrated into existing projects and extended to meet future requirements. Our code is organized
+                into modular components, making it easier to understand, modify, and reuse.</p>
+            </article>
+
+            <img class="offer__image" src="./images/placeholder.jpg" alt="image of a project">
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Responsive Design</h3>
+              <p class="offer__card-description">Ensure that your website is accessible and usable on all devices,
+                from smartphones to large desktop screens. Our responsive design approach ensures that your website
+                adjusts to different screen sizes and formats, providing an optimal user experience for all users.</p>
+            </article>
+
+            <img class="offer__image" src="./images/placeholder.jpg" alt="image of a project">
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Cross-Browser Compatibility</h3>
+              <p class="offer__card-description">Ensure that your website works correctly on all major browsers,
+                including Chrome, Firefox, Safari, and Edge. Our cross-browser compatibility approach ensures that
+                your website displays correctly and functions as expected across all major browsers.</p>
+            </article>
+
+            <img class="offer__image" src="./images/placeholder.jpg" alt="image of a project">
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Optimized User Interfaces</h3>
+              <p class="offer__card-description">Create user interfaces that are intuitive, fast, and engaging,
+                with a focus on usability and accessibility. Our approach involves a thorough understanding of
+                user needs and preferences, as well as a focus on creating intuitive and user-friendly interfaces.</p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="skills">
+
+        <div class="container skills">
+          <h2 class="skills__title">My <span>Skills</span></h2>
+          <p class="skills__description"></p>
+
+          <div class="skills__card-grid">
+
+            <article class="skills__card">
+              <i class="bx bxl-html5 html"></i>
+              <h3 class="skills__card-title">HTML</h3>
+              <p class="skills__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.
+              </p>
+            </article>
+
+            <article class="skills__card">
+              <i class="bx bxl-css3 css"></i>
+              <h3 class="skills__card-title">CSS</h3>
+              <p class="skills__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.
+              </p>
+            </article>
+
+            <article class="skills__card">
+              <i class="ri-javascript-line js"></i>
+              <h3 class="skills__card-title">JavaScript</h3>
+              <p class="skills__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.
+              </p>
+            </article>
+
+            <article class="skills__card">
+              <i class="ri-npmjs-line npm"></i>
+              <h3 class="skills__card-title">NPM</h3>
+              <p class="skills__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.
+              </p>
+            </article>
+
+            <article class="skills__card">
+              <i class="ri-github-line git"></i>
+              <h3 class="skills__card-title">Git</h3>
+              <p class="skills__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact">
+
+        <div class="container contact">
+
+          <h2 class="contact__title">Get in Contact</h2>
+          <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae.</p>
+          <a href="mailto:rorunsolu@gmail.com" class="button">Reach Out</a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer id="footer">
+
+      <div class="container footer">
+
+        <p class="footer__text">Ray Orunsolu</p>
+
+        <p class="footer__text">Copyright &copy; 2024. All Rights Reserved</p>
+
+      </div>
+
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+
+</html>

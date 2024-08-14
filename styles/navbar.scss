@@ -1,0 +1,140 @@
+@import "styles/style.scss";
+
+/* ------------ Navbar ------------ */
+nav {
+    display: grid;
+    place-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    height: 5rem;
+    width: 100vw;
+
+    @media (width < 600px) {
+        height: 3.5rem;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    @media (width < 1000px) {
+        justify-content: flex-end;
+    }
+
+    &__logo {
+        font-size: 2rem;
+        font-weight: 600;
+
+        color: $black;
+
+        @media (width < 600px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+
+        @media (width < 1000px) {
+            display: none;
+            flex-direction: column;
+            gap: 0;
+
+            position: absolute;
+            top: 100%;
+            right: 0;
+
+            background-color: $white;
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__item {
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+
+        @media (width < 1000px) {
+            border-radius: 0;
+            padding: 0;
+
+            height: 5rem;
+        }
+    }
+
+    &__link {
+        font-size: 1rem;
+        font-weight: 500;
+
+        color: $black;
+
+        @media (width < 1000px) {
+            display: flex;
+            align-items: center;
+
+            height: 100%;
+
+            padding: 1rem 5rem;
+        }
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @media (width < 1000px) {
+            display: none;
+        }
+
+        a {
+            @media (width < 1000px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.nav__toggle-button {
+    display: none;
+
+    color: $black;
+
+    @media (width < 1000px) {
+        display: inline-block;
+
+        background: transparent;
+
+        font-size: 2rem;
+
+        color: hsl(0, 0%, 0%);
+
+        cursor: pointer;
+    }
+}
+
+#nav__toggle-open {
+}
+
+#nav__toggle-close {
+    @media (width < 1000px) {
+        display: none;
+    }
+}
