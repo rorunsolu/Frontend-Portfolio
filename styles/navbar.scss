@@ -91,6 +91,8 @@ nav {
 
         &:hover {
             color: $blue;
+
+            transition: all 300ms ease;
         }
     }
 

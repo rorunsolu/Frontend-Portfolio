@@ -195,8 +195,6 @@ img {
     object-position: center;
 
     width: 100%;
-
-    //box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .container--nav {
@@ -259,6 +257,9 @@ img {
 
         background-color: $white;
         color: hsl(0, 0%, 0%);
+
+        transform: translateY(-0.15rem);
+        transition: all 300ms ease;
     }
 }
 
