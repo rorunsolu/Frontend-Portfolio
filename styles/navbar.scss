@@ -30,17 +30,6 @@ nav {
         justify-content: flex-end;
     }
 
-    &__logo {
-        font-size: 2rem;
-        font-weight: 600;
-
-        color: $black;
-
-        @media (width < 600px) {
-            font-size: 1.5rem;
-        }
-    }
-
     &__list {
         display: flex;
         justify-content: space-between;
@@ -75,7 +64,7 @@ nav {
     }
 
     &__link {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 500;
 
         color: $black;

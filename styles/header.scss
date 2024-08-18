@@ -21,7 +21,6 @@
     }
 
     &__image-wrapper {
-        
     }
 
     img {
@@ -35,7 +34,10 @@
         color: $black;
     }
 
-    span {
-        color: $blue;
+    span:not(:nth-child(2)) {
+        background: linear-gradient(to right, #ff8a00, #da1b60);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 }
