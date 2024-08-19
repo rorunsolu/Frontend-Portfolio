@@ -20,18 +20,25 @@
         padding: 5rem 0;
     }
 
-    &__image-wrapper {
-    }
-
     img {
-        max-width: 10rem;
+        max-width: 15rem;
         border-radius: 50%;
     }
 
     &__title {
+        //width: 100%;
+
+        border-right: 0.3rem solid $blue;
+
+        overflow: hidden;
+
         font-weight: 700;
 
         color: $black;
+
+        animation:
+            typing 2s steps(18),
+            cursor 0.4s step-end infinite alternate;
     }
 
     span:not(:nth-child(2)) {
@@ -39,5 +46,20 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
     }
 }

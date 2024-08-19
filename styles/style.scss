@@ -76,6 +76,7 @@ main {
         "about about about"
         "offer offer offer"
         "skills skills skills"
+        "resume resume resume"
         "contact contact contact";
 
     grid-template-rows: auto;
@@ -95,6 +96,10 @@ main {
 
 #skills {
     grid-area: skills;
+}
+
+#resume {
+    grid-area: resume;
 }
 
 #contact {
@@ -167,7 +172,7 @@ h3 {
     font-size: 1.75rem;
 
     @media (width <= 500px) {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 
