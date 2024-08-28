@@ -113,8 +113,9 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-
     font-size: 4.5rem;
+
+    width: fit-content;
 
     @media (width <= 1200px) {
         font-size: 4rem;
@@ -292,6 +293,30 @@ img {
 
         background-color: $blue;
         color: $white;
+
+        transition: all 300ms ease;
+    }
+}
+
+.icon-button {
+
+    margin-top: 1.5rem;
+    i {
+        border-radius: 2.5rem;
+        padding: 0.75rem;
+
+        width: fit-content;
+
+        color: $white;
+        background-color: $blue;
+
+        font-size: 2rem;
+
+        &:hover {
+            color: $black;
+
+            transition: all 300ms ease;
+        }
     }
 }
 
@@ -360,3 +385,20 @@ img {
         }
     }
 }
+
+// .appear {
+//     animation: aniOnScroll linear;
+//     animation-timeline: view();
+// }
+
+// @keyframes aniOnScroll {
+//     from {
+//         opacity: 0;
+//         scale: 0.5;
+//     }
+
+//     to {
+//         opacity: 1;
+//         scale: 1;
+//     }
+// }
