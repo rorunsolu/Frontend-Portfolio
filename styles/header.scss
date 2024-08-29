@@ -1,6 +1,5 @@
 @import "styles/style.scss";
 
-/* ------------ Header Styles ------------ */
 .header {
     display: flex;
     flex-direction: column;
@@ -11,10 +10,6 @@
     gap: 1rem;
 
     padding: 10rem 0;
-
-    @media (width <= 1200px) {
-        //padding: 10rem 0;
-    }
 
     @media (width <= 600px) {
         padding: 5rem 0;

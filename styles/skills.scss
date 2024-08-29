@@ -1,20 +1,11 @@
 @import "styles/style.scss";
 
-/* ------------ Skills Styles ------------ */
-
 .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 2rem;
-
-    &__title {
-    }
-
-    &__description {
-    }
 
     &__card-grid {
         display: grid;

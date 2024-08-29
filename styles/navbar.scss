@@ -1,6 +1,5 @@
 @import "styles/style.scss";
 
-/* ------------ Navbar ------------ */
 nav {
     display: grid;
     place-items: center;
@@ -121,9 +120,6 @@ nav {
 
         cursor: pointer;
     }
-}
-
-#nav__toggle-open {
 }
 
 #nav__toggle-close {
