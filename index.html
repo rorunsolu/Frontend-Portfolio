@@ -2,20 +2,29 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Frontend Portfolio</title>
+
+    <meta name="description"
+          content="Explore my frontend developer portfolio showcasing skills in HTML, CSS, JavaScript, and responsive web design.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
         /modern-normalize.min.css" rel="stylesheet">
 
     <!-- Remix Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 
@@ -25,7 +34,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
-    <title>Vite App</title>
+    <!-- Custom SCSS Imports -->
+    <script type="module" src="/main.js"></script>
+
   </head>
 
   <body>
@@ -66,6 +77,8 @@
           <a class="button button--secondary" href="#offer">Services</a>
         </div>
 
+      </div>
+
     </header>
 
     <main>
@@ -83,32 +96,37 @@
           <div class="projects__card-grid">
 
             <article class="projects__card">
-              <a href="https://game-store-drab.vercel.app/" target="_blank"><img class="projects__card-image"
+              <a href="https://game-store-drab.vercel.app/" target="_blank" rel="noopener"><img
+                     class="projects__card-image"
                      src="./images/game-store.png" alt="image of a project"></a>
               <h3 class="projects__card-title">Game Store Website (Unfinished)</h3>
             </article>
 
             <article class="projects__card">
-              <a href="https://photography-website-self.vercel.app/" target="_blank"><img class="projects__card-image"
+              <a href="https://photography-website-self.vercel.app/" target="_blank" rel="noopener"><img
+                     class="projects__card-image"
                      src="./images/photography.png" alt="image of a project"></a>
               <h3 class="projects__card-title">Photography Website</h3>
             </article>
 
             <article class="projects__card">
-              <a href="https://real-estate-website-pi-ten.vercel.app/" target="_blank"><img class="projects__card-image"
+              <a href="https://real-estate-website-pi-ten.vercel.app/" target="_blank" rel="noopener"><img
+                     class="projects__card-image"
                      src="./images/real-estate.png" alt="image of a project"></a>
               <h3 class="projects__card-title">Real Estate Website</h3>
             </article>
 
             <article class="projects__card">
-              <a href="https://holiday-pearl-ten.vercel.app/" target="_blank"><img class="projects__card-image"
+              <a href="https://holiday-pearl-ten.vercel.app/" target="_blank" rel="noopener"><img
+                     class="projects__card-image"
                      src="./images/holiday.png" alt="image of a project"></a>
 
               <h3 class="projects__card-title">Holiday Website</h3>
             </article>
 
             <article class="projects__card">
-              <a href="https://business-coaching-sigma.vercel.app/" target="_blank"><img class="projects__card-image"
+              <a href="https://business-coaching-sigma.vercel.app/" target="_blank" rel="noopener"><img
+                     class="projects__card-image"
                      src="./images/coaching.png" alt="image of a project"></a>
               <h3 class="projects__card-title">Business Coaching Website</h3>
             </article>
@@ -222,7 +240,7 @@
 
           </div>
 
-          <a class="button" href="resume.pdf" target="_blank">Download My Resume Here</a>
+          <a class="button" href="resume.pdf" target="_blank" rel="noopener">Download My Resume Here</a>
 
         </div>
 
@@ -237,9 +255,9 @@
           <a href="mailto:rorunsolu@gmail.com" class="button">Reach Out</a>
 
           <div class="buttons-wrapper">
-            <a class="icon-button" href="https://github.com/rorunsolu" target="_blank"><i
+            <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"><i
                  class="ri-github-fill"></i></a>
-            <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank"><i
+            <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"><i
                  class="ri-linkedin-box-fill"></i></a>
           </div>
 
@@ -261,7 +279,8 @@
 
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <!-- JS Script -->
+    <script src="script.js"></script>
 
   </body>
 
