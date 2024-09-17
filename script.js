@@ -1,7 +1,7 @@
-window.addEventListener('scroll',
-    function () {
-        document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
-    });
+// window.addEventListener('scroll',
+//     function () {
+//         document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+//     });
 
 const nav = document.querySelector('.nav__list');
 const openNavButton = document.querySelector('#nav__toggle-open');
