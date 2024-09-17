@@ -11,6 +11,11 @@ import '/styles/contact.scss';
 
 import '/styles/footer.scss';
 
+window.addEventListener('scroll',
+    function () {
+        document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+    });
+
 const nav = document.querySelector('.nav__list');
 const openNavButton = document.querySelector('#nav__toggle-open');
 const closeNavButton = document.querySelector('#nav__toggle-close');
