@@ -6,12 +6,6 @@
     align-items: center;
     text-align: center;
 
-    padding: 10rem 0;
-
-    @media (width <= 700px) {
-        padding: 5rem 0;
-    }
-
     &__title {
         margin-bottom: 1rem;
     }

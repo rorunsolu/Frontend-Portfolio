@@ -20,16 +20,6 @@
         border-radius: 50%;
     }
 
-    &__title {
-        width: fit-content;
-
-        overflow: hidden;
-
-        font-weight: 700;
-
-        color: $black;
-    }
-
     span:not(:nth-child(2)) {
         background: linear-gradient(to right, #ff8a00, #da1b60);
         -webkit-background-clip: text;

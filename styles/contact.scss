@@ -1,5 +1,3 @@
-@import "styles/style.scss";
-
 .contact {
     display: flex;
     flex-direction: column;
@@ -7,11 +5,4 @@
     text-align: center;
 
     gap: 1rem;
-
-    padding: 10rem 0;
-
-    @media (width <= 700px) {
-        padding: 5rem 0;
-    }
-
 }
