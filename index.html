@@ -27,7 +27,6 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -311,7 +310,51 @@
 
     </footer>
 
-    <!-- <script src="/scripts/script.js"></script> -->
+    <script>
+
+      window.addEventListener('scroll',
+        function () {
+          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+        });
+
+      const nav = document.querySelector('.nav__list');
+      const openNavButton = document.querySelector('#nav__toggle-open');
+      const closeNavButton = document.querySelector('#nav__toggle-close');
+
+      const openNav = function () {
+        if (nav.style.display === 'none') {
+          nav.style.display = 'flex';
+          openNavButton.style.display = 'none';
+          closeNavButton.style.display = 'inline-block';
+        }
+
+        else {
+          nav.style.display = 'none';
+          openNavButton.style.display = 'inline-block';
+          closeNavButton.style.display = 'none';
+        }
+      };
+
+      openNavButton.addEventListener('click', openNav);
+
+      const closeNav = function () {
+
+        nav.style.display = 'none';
+
+        openNavButton.style.display = 'inline-block';
+
+        closeNavButton.style.display = 'none';
+      };
+
+      closeNavButton.addEventListener('click', closeNav);
+
+      if (document.body.clientWidth < 1000) {
+        nav.querySelectorAll('li a').forEach(navLink => {
+          navLink.addEventListener('click', closeNav);
+        });
+      }
+
+    </script>
 
   </body>
 
