@@ -137,7 +137,7 @@ img {
 
 a {
     color: var(--color-black);
-    
+
     a:focus {
         outline: 2px solid #007bff;
     }
@@ -171,6 +171,8 @@ a {
 
 .buttons-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 
     @media (width <= 275px) {
@@ -206,20 +208,33 @@ a {
     }
 }
 
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .icon-button {
     margin-top: 1.5rem;
+
+    @media (width <= 1000px) {
+        border-radius: var(--border-radius);
+    }
 
     i {
         border-radius: var(--border-radius-circle);
         padding: var(--padding-btn);
         padding: 0.75rem;
 
-        width: fit-content;
-
         color: var(--color-white);
         background-color: var(--color-blue);
 
         font-size: 2rem;
+
+        @media (width <= 1000px) {
+            padding: 0.75rem 3rem;
+
+            border-radius: var(--border-radius);
+        }
 
         &:hover {
             color: var(--color-blue);

@@ -11,6 +11,8 @@
         grid-template-columns: repeat(5, 1fr);
         gap: var(--gap-card-grid);
 
+        margin-bottom: 2rem;
+
         @media (width <= 1700px) {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -58,8 +60,10 @@
         font-size: 4.5rem;
     }
 
-    .button {
-        align-self: center;
-        margin-top: 1rem;
+    .buttons-wrapper {
+
+    @media (width <= 700px) {
+        flex-direction: column;
     }
+}
 }

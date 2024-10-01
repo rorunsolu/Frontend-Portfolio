@@ -4,5 +4,7 @@
     align-items: center;
     text-align: center;
 
-    gap: 1rem;
+   &__description {
+       margin-bottom: 2rem;
+   }
 }

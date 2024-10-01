@@ -50,9 +50,8 @@
           <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
         </ul>
 
-        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
-        </button>
-        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
+        <button class="nav__toggle-open" id="openNavPopup-btn" type="button" onclick="openPopupNav()"><i
+             class="ri-menu-line"></i>
         </button>
 
       </div>
@@ -71,7 +70,7 @@
           <span class="text-gradient">Frontend Developer.</span>
         </h1>
 
-          <a class="button" href="#projects">My Work</a>
+        <a class="button" href="#projects">My Work</a>
 
       </div>
 
@@ -284,7 +283,13 @@
 
           </div>
 
-          <a class="button" href="resume.pdf" target="_blank" rel="noopener">Download My Resume Here</a>
+          <div class="buttons-wrapper">
+            <a class="button" href="/assets/Ray Orunsolu - Front End Developer.pdf" target="_blank"
+               rel="noopener">Download My
+              Resume Here (PDF)</a>
+            <a class="button" href="/assets/Ray Orunsolu - Front End Developer.docx" target="_blank"
+               rel="noopener">Download My Resume Here (Word)</a>
+          </div>
 
         </div>
 
@@ -309,7 +314,6 @@
                  class="ri-linkedin-box-fill"></i></a>
           </div>
 
-
         </div>
 
       </section>
@@ -330,42 +334,52 @@
 
     <script>
 
-      const nav = document.querySelector('.nav__list');
-      const openNavButton = document.querySelector('#nav__toggle-open');
-      const closeNavButton = document.querySelector('#nav__toggle-close');
+      function openPopupNav() {
+        const popupNavContainer = document.createElement('div');
 
-      const openNav = function () {
-        if (nav.style.display === 'none') {
-          nav.style.display = 'flex';
-          openNavButton.style.display = 'none';
-          closeNavButton.style.display = 'inline-block';
-        }
+        popupNavContainer.innerHTML = `
 
-        else {
-          nav.style.display = 'none';
-          openNavButton.style.display = 'inline-block';
-          closeNavButton.style.display = 'none';
-        }
+        <div id="navPopup">
+
+            <button class="nav__toggle-close" id="closeNavPopup-btn" type="button" onclick="closePopupNav()"><i class="ri-close-line"></i>
+            </button>
+
+            <div id="navPopUpLinks">
+              <a href="#home" onclick="closePopupNav()">Home</a>
+              <a href="#about" onclick="closePopupNav()">About</a>
+              <a href="#contact" onclick="closePopupNav()">Contact</a>
+              <a href="#projects" onclick="closePopupNav()">Projects</a>
+            </div>
+
+            <div class="icon-wrapper">
+              <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
+                 aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
+                   class="ri-github-fill"></i></a>
+              <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
+                 aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
+                   class="ri-linkedin-box-fill"></i></a>
+            </div>
+
+        </div>
+
+        `;
+
+        document.body.style.overflow = 'hidden';
+
+        document.body.appendChild(popupNavContainer);
       };
 
-      openNavButton.addEventListener('click', openNav);
+      function closePopupNav() {
+        const navPopup = document.getElementById('navPopup');
+        const navPopupLinks = document.querySelectorAll('#navPopUpLinks div');
+        const navPopUpLink = document;
 
-      const closeNav = function () {
+        if (navPopup) {
+          navPopup.remove();
 
-        nav.style.display = 'none';
-
-        openNavButton.style.display = 'inline-block';
-
-        closeNavButton.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
       };
-
-      closeNavButton.addEventListener('click', closeNav);
-
-      if (document.body.clientWidth < 1000) {
-        nav.querySelectorAll('li a').forEach(navLink => {
-          navLink.addEventListener('click', closeNav);
-        });
-      }
 
     </script>
 
