@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+
     gap: 2rem;
 
     &__card-grid {
@@ -33,16 +34,13 @@
         justify-content: center;
         align-items: center;
 
-        gap: 1rem;
-
         border-radius: var(--border-radius);
-        margin-bottom: 5rem;
-        padding: 3.5rem;
+        padding: var(--padding);
 
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        box-shadow: var(--box-shadow);
 
         &:hover {
-            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: var(--box-shadow) inset;
 
             transition: var(--transition);
         }
@@ -60,7 +58,8 @@
         font-size: 4.5rem;
     }
 
-    &__card-title {
-        font-size: 1.5rem;
+    .button {
+        align-self: center;
+        margin-top: 1rem;
     }
 }

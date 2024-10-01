@@ -11,8 +11,12 @@ nav {
     height: 5rem;
     width: 100vw;
 
+    padding-top: 1rem;
+
     @media (width < 600px) {
         height: 3.5rem;
+
+        padding-top: 0.75rem;
     }
 }
 
@@ -23,10 +27,16 @@ nav {
 
     position: relative;
 
-    height: 100%;
+    width: 100%;
+
+    padding: 1rem 0;
+
+    background-color: var(--color-white);
 
     @media (width < 1000px) {
         justify-content: flex-end;
+
+        padding: 1rem 2rem;
     }
 
     &__list {

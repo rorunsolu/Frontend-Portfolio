@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Frontend Portfolio</title>
+    <title>Ray's Portfolio</title>
 
     <meta name="description"
           content="Explore my frontend developer portfolio showcasing skills in HTML, CSS, JavaScript, and responsive web design.">
@@ -30,7 +30,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
           rel="stylesheet">
 
     <!-- Custom SCSS Imports -->
@@ -41,7 +41,7 @@
   <body>
 
     <nav>
-      <div class="container--nav nav">
+      <div class="container-nav nav">
 
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
@@ -71,10 +71,7 @@
           <span class="text-gradient">Frontend Developer.</span>
         </h1>
 
-        <div class="buttons-wrapper">
           <a class="button" href="#projects">My Work</a>
-          <a class="button button--secondary" href="#offer">Services</a>
-        </div>
 
       </div>
 
@@ -87,88 +84,112 @@
         <div class="container projects">
 
           <h2 class="projects__title">My Projects</h2>
-          <p class="projects__description">
-            Here are some projects I've worked on. These projects are a great way for me to showcase my skills and also
-            to keep myself busy when I'm at the gym.
-          </p>
 
-          <div class="projects__card-grid">
+          <div class="projects__card-wrapper">
 
             <article class="projects__card">
-              <a href="https://real-estate-website-pi-ten.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Real Estate Website project in a new tab"
-                 title="View the Real Estate Website project">
-                <img class="projects__card-image"
-                     src="./images/real-estate-img.jpg"
-                     alt="Screenshot of a real estate website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/real-estate-icon.png"
+                   alt="icon representing a building" loading="lazy">
               <h3 class="projects__card-title">Real Estate Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://real-estate-website-pi-ten.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Real Estate Website project in a new tab"
+                 title="Real Estate Website project link">View Project</a>
             </article>
 
             <article class="projects__card">
-              <a href="https://game-store-drab.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Game Store Website project in a new tab"
-                 title="View the Game Store Website project">
-                <img class="projects__card-image"
-                     src="./images/game-store-img.png"
-                     alt="Screenshot of a game store website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/game-store-icon.png"
+                   alt="icon representing a game controller" loading="lazy">
               <h3 class="projects__card-title">Game Store Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://game-store-drab.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Game Store Website project in a new tab"
+                 title="Game Store Website project link">View Project</a>
             </article>
 
             <article class="projects__card">
-              <a href="https://photography-website-self.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Photography Website project in a new tab"
-                 title="View the Photography Website project">
-                <img class="projects__card-image"
-                     src="./images/photography.png"
-                     alt="Screenshot of a photography website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/photography-icon.png"
+                   alt="icon representing a camera" loading="lazy">
               <h3 class="projects__card-title">Photography Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://photography-website-self.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Photography Website project in a new tab"
+                 title="Photography Website project link">View Project</a>
             </article>
 
             <article class="projects__card">
-              <a href="https://notepad-app-drab.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Notepad App project in a new tab" title="View the Notepad App project">
-                <img class="projects__card-image"
-                     src="./images/notepad-app-img.png"
-                     alt="Screenshot of a notepad web app" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/notepad-icon.png"
+                   alt="icon representing a notepad" loading="lazy">
               <h3 class="projects__card-title">Notepad App</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://notepad-app-drab.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Notepad App project in a new tab"
+                 title="Notepad App project link">View Project</a>
             </article>
 
             <article class="projects__card">
-              <a href="https://fintech-website-six.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Fintech Website project in a new tab" title="View the Fintech Website project">
-                <img class="projects__card-image"
-                     src="./images/fintech.png"
-                     alt="Screenshot of a fintech website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/fintech-icon.png"
+                   alt="icon representing financial technology" loading="lazy">
               <h3 class="projects__card-title">Fintech Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://fintech-website-six.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Fintech Website project in a new tab"
+                 title="Fintech Website project link">View Project</a>
             </article>
 
+
             <article class="projects__card">
-              <a href="https://holiday-pearl-ten.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Holiday Website project in a new tab" title="View the Holiday Website project">
-                <img class="projects__card-image"
-                     src="./images/holiday-site.png"
-                     alt="Screenshot of a holiday-themed website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/holiday-icon.png"
+                   alt="icon representing a beach" loading="lazy">
               <h3 class="projects__card-title">Holiday Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://holiday-pearl-ten.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Holiday Website project in a new tab"
+                 title="Holiday Website project link">View Project</a>
             </article>
 
             <article class="projects__card">
-              <a href="https://business-coaching-sigma.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Business Coaching Website project in a new tab"
-                 title="View the Business Coaching Website project">
-                <img class="projects__card-image"
-                     src="./images/coaching.png"
-                     alt="Screenshot of a business coaching website" loading="lazy" />
-              </a>
+              <img class="projects__card-icon" src="./images/coaching-icon.png"
+                   alt="icon representing business coaching" loading="lazy">
               <h3 class="projects__card-title">Business Coaching Website</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">HTML</li>
+                <li class="projects__card-skill">CSS</li>
+                <li class="projects__card-skill">JavaScript</li>
+              </ul>
+              <a class="button" href="https://business-coaching-sigma.vercel.app/" target="_blank" rel="noopener"
+                 aria-label="View the Business Coaching Website project in a new tab"
+                 title="Business Coaching Website project link">View Project</a>
             </article>
+
+
 
           </div>
+
 
         </div>
 
@@ -178,10 +199,13 @@
 
         <div class="container about">
 
-          <h2 class="about__title">About Me</h2>
-          <p class="about__description">Hi there! I'm Ray, a frontend developer based in London. I'm passionate about
-            building beautiful, functional and responsive websites that provide a great user experience. I'm always
-            looking for new challenges and opportunities to expand my skillset.</p>
+          <div class="about__header-wrapper">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">Hi! I'm Ray, a frontend developer based in London. I enjoy building
+              stylish, functional and responsive websites that provide a great user experience. I'm always
+              looking for new challenges and opportunities to expand my skill set.</p>
+          </div>
+
           <img class="about__image" src="./images/ray.jpg" alt="image of Ray" loading="lazy">
 
         </div>
@@ -193,60 +217,34 @@
         <div class="container offer">
 
           <h2 class="offer__title">What I Can Offer</h2>
-          <p class="offer__description">Whether you need a website for your business, a personal portfolio, or a
-            game, I can help you build it. I can provide web design and development services tailored to your
-            specific needs. From creating a visually appealing and responsive website layout to coding the
-            functionality and interactivity, I can work with you to bring your vision to life.</p>
+          <p class="offer__description">I provide tailored web design and development services, transforming your ideas
+            into
+            visually appealing and fully functional websites.</p>
 
           <div class="offer__card-grid">
 
-            <img class="offer__image" src="./images/modular-code.jpg" alt="Image related to modular code"
-                 loading="lazy" aria-label="Image showcasing modular code practices"
-                 title="Image showcasing modular code practices">
-
-            <article class="offer__card">
-              <h3 class="offer__card-title">Modular Code</h3>
-              <p class="offer__card-description">Clean, maintainable, and reusable code that can be easily
-                integrated into existing projects and extended to meet future requirements. My code is organized
-                into modular components, making it easier to understand, modify, and reuse.</p>
-            </article>
-
-            <img class="offer__image" src="./images/responsive-design.jpg" alt="Image related to responsive design"
-                 loading="lazy" aria-label="Image showcasing responsive web design"
-                 title="Image showcasing responsive web design">
-
             <article class="offer__card">
               <h3 class="offer__card-title">Responsive Design</h3>
-              <p class="offer__card-description">Ensure that your website is accessible and usable on all devices,
-                from smartphones to large desktop screens. My responsive design approach ensures that your website
-                adjusts to different screen sizes and formats, providing an optimal user experience for all users.</p>
+              <p class="offer__card-description">Crafted to be fully responsive across all devices and screen sizes,
+                ensuring a
+                seamless user experience everywhere.</p>
             </article>
-
-            <img class="offer__image" src="./images/seo.jpg" alt="Image related to search engine optimization"
-                 loading="lazy" aria-label="Image representing search engine optimization techniques"
-                 title="Image representing search engine optimization techniques">
 
             <article class="offer__card">
               <h3 class="offer__card-title">Search Engine Optimization</h3>
-              <p class="offer__card-description">My SEO services include keyword research, on-page optimization, link
-                building, content creation, and technical optimization to ensure your website ranks higher in search
-                engine
-                result pages (SERPs) and drives more organic traffic to your site.</p>
+              <p class="offer__card-description">Enhance your website's visibility and drive more organic traffic with
+                tailored SEO
+                strategies, including keyword optimization and link building.</p>
             </article>
 
-            <img class="offer__image" src="./images/ui.jpg" alt="Image related to optimized user interfaces"
-                 loading="lazy" aria-label="Image showcasing optimized user interface design"
-                 title="Image showcasing optimized user interface design">
-
             <article class="offer__card">
-              <h3 class="offer__card-title">Optimized User Interfaces</h3>
-              <p class="offer__card-description">Create user interfaces that are intuitive, fast, and engaging,
-                with a focus on usability and accessibility. My approach involves a thorough understanding of
-                user needs and preferences, as well as a focus on creating intuitive and user-friendly interfaces.</p>
+              <h3 class="offer__card-title">Optimized UI/UX</h3>
+              <p class="offer__card-description">I design fast, intuitive, and accessible user interfaces that
+                prioritize usability,
+                creating an engaging experience for all users.</p>
             </article>
 
           </div>
-
 
         </div>
 
@@ -304,10 +302,10 @@
 
           <div class="buttons-wrapper">
             <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
-               aria-label="View my GitHub profile in a new tab" title="View my GitHub profile in a new tab"><i
+               aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
                  class="ri-github-fill"></i></a>
             <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
-               aria-label="View my LinkedIn profile in a new tab" title="View my LinkedIn profile in a new tab"><i
+               aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
                  class="ri-linkedin-box-fill"></i></a>
           </div>
 
@@ -331,11 +329,6 @@
     </footer>
 
     <script>
-
-      window.addEventListener('scroll',
-        function () {
-          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
-        });
 
       const nav = document.querySelector('.nav__list');
       const openNavButton = document.querySelector('#nav__toggle-open');
