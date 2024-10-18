@@ -42,12 +42,6 @@
         @media (width <= 800px) {
             width: 100%;
         }
-
-        &:hover {
-            transition: var(--transition);
-
-            box-shadow: var(--box-shadow) inset;
-        }
     }
 
     &__card-skills {

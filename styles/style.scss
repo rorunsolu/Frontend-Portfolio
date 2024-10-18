@@ -135,12 +135,18 @@ img {
     width: 100%;
 }
 
+article {
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: var(--box-shadow) inset;
+    }
+}
+
 a {
     color: var(--color-black);
 
-    a:focus {
-        outline: 2px solid #007bff;
-    }
+    transition: var(--transition);
 }
 
 .container {
@@ -230,6 +236,8 @@ a {
 
         font-size: 2rem;
 
+        transition: var(--transition);
+
         @media (width <= 1000px) {
             padding: 0.75rem 3rem;
 
@@ -239,8 +247,6 @@ a {
         &:hover {
             color: var(--color-blue);
             background-color: var(--color-white);
-
-            transition: var(--transition);
         }
     }
 }

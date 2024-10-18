@@ -41,12 +41,6 @@
 
         box-shadow: var(--box-shadow);
 
-        &:hover {
-            box-shadow: var(--box-shadow) inset;
-
-            transition: var(--transition);
-        }
-
         @media (width <= 800px) {
             padding: 1.5rem;
         }

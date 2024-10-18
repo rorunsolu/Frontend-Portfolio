@@ -42,12 +42,6 @@
         @media (width <= 450px) {
             padding: 1.5rem;
         }
-
-        &:hover {
-            transition: var(--transition);
-
-            box-shadow: var(--box-shadow) inset;
-        }
     }
 
     &__card-title {
