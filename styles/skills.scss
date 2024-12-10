@@ -1,8 +1,6 @@
 .skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
 
     gap: 2rem;
 
@@ -36,8 +34,9 @@
         justify-content: center;
         align-items: center;
 
-        border-radius: var(--border-radius);
-        padding: var(--padding);
+        border-left: 6px solid var(--color-blue);
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        padding: 1.5rem;
 
         box-shadow: var(--box-shadow);
 
@@ -53,11 +52,4 @@
 
         font-size: 4.5rem;
     }
-
-    .buttons-wrapper {
-
-    @media (width <= 700px) {
-        flex-direction: column;
-    }
-}
 }

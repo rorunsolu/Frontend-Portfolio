@@ -13,13 +13,13 @@
     --color-icon-js: hsl(54, 100%, 54%);
     --color-icon-npm: hsl(0, 89%, 55%);
 
-    --border-radius: 0.5rem;
+    --border-radius: 0.25rem;
     --border-radius-btn: 2.5rem;
     --border-radius-circle: 50%;
 
-    --box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    --box-shadow: -10px 10px 15px -7.5px rgba(0, 0, 0, 0.1);
 
-    --margin-bottom: 4rem;
+    --margin-bottom: 3rem;
 
     --padding: 4rem;
     --padding-btn: 0.75rem 1.25rem;
@@ -72,16 +72,8 @@ h1 {
     font-weight: 700;
     font-size: 4.5rem;
 
-    @media (width <= 1200px) {
-        font-size: 4rem;
-    }
-
-    @media (width <= 1000px) {
+    @media (width <= 700px) {
         font-size: 3.5rem;
-    }
-
-    @media (width <= 600px) {
-        font-size: 3rem;
     }
 
     @media (width <= 500px) {
@@ -135,18 +127,30 @@ img {
     width: 100%;
 }
 
-article {
-    transition: var(--transition);
-
-    &:hover {
-        box-shadow: var(--box-shadow) inset;
-    }
-}
-
 a {
     color: var(--color-black);
 
     transition: var(--transition);
+}
+
+button {
+    background: transparent;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+    i {
+        transition: var(--transition);
+
+        color: var(--color-black);
+
+        &:hover {
+            color: var(--color-blue);
+        }
+    }
 }
 
 .container {
@@ -160,115 +164,10 @@ a {
     @media (width <= 600px) {
         width: 85%;
     }
-}
 
-.container-nav {
-    margin: 0 auto;
-
-    width: 95%;
-    max-width: 1800px;
-
-    position: relative;
-
-    border-radius: var(--border-radius);
-
-    box-shadow: var(--box-shadow);
-}
-
-.buttons-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    @media (width <= 275px) {
-        flex-direction: column;
+    @media (width <= 400px) {
+        width: 90%;
     }
-}
-
-.button {
-    border: 2px solid transparent;
-    border-radius: var(--border-radius);
-    padding: var(--padding-btn);
-
-    width: fit-content;
-
-    color: var(--color-white);
-    background-color: var(--color-blue);
-
-    font-weight: var(--font-weight-btn);
-
-    &:hover {
-        border: 2px solid var(--color-blue);
-
-        color: var(--color-blue);
-        background-color: var(--color-white);
-
-        transition: var(--transition);
-    }
-
-    &:active {
-        background-color: var(--color-white-secondary);
-
-        transition: var(--transition);
-    }
-}
-
-.icon-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.icon-button {
-    margin-top: 1.5rem;
-
-    @media (width <= 1000px) {
-        border-radius: var(--border-radius);
-    }
-
-    i {
-        border-radius: var(--border-radius-circle);
-        padding: var(--padding-btn);
-        padding: 0.75rem;
-
-        color: var(--color-white);
-        background-color: var(--color-blue);
-
-        font-size: 2rem;
-
-        transition: var(--transition);
-
-        @media (width <= 1000px) {
-            padding: 0.75rem 3rem;
-
-            border-radius: var(--border-radius);
-        }
-
-        &:hover {
-            color: var(--color-blue);
-            background-color: var(--color-white);
-        }
-    }
-}
-
-.html {
-    color: var(--color-icon-html);
-}
-
-.css {
-    color: var(--color-icon-css);
-}
-
-.git {
-    color: var(--color-icon-git);
-}
-
-.js {
-    color: var(--color-icon-js);
-}
-
-.npm {
-    color: var(--color-icon-npm);
 }
 
 .wave {
@@ -311,4 +210,24 @@ a {
             transform: rotate(0deg);
         }
     }
+}
+
+.html {
+    color: var(--color-icon-html);
+}
+
+.css {
+    color: var(--color-icon-css);
+}
+
+.git {
+    color: var(--color-icon-git);
+}
+
+.js {
+    color: var(--color-icon-js);
+}
+
+.npm {
+    color: var(--color-icon-npm);
 }

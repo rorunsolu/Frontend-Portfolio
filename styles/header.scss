@@ -1,13 +1,10 @@
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
     gap: 1rem;
 
     padding: 10rem 0;
+    padding-bottom: 5rem;
 
     @media (width <= 600px) {
         padding: 5rem 0;
@@ -24,10 +21,24 @@
         }
     }
 
-    span:not(:nth-child(2)) {
+    span:not(:nth-child(3)) {
         background: linear-gradient(to right, #ff8a00, #da1b60);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+    }
+
+    .button-wrapper {
+        @media (width < 550px) {
+            flex-direction: column;
+
+            width: 100%;
+        }
+    }
+
+    .button {
+        @media (width < 550px) {
+            width: 160px;
+        }
     }
 }

@@ -1,8 +1,6 @@
 .offer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 
     &__description {
         margin-bottom: var(--margin-bottom);
@@ -12,32 +10,20 @@
 
     &__card-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--gap-card-grid);
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 2rem;
 
-        @media (width <= 1200px) {
-            grid-template-columns: repeat(1, 1fr);
+        @media (width < 450px) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: var(--border-radius);
-        padding: var(--padding);
+                border-left: 6px solid var(--color-blue);
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        padding: 2rem;
 
         box-shadow: var(--box-shadow);
-
-        @media (width <= 1700px) {
-            padding: 2rem;
-        }
-
-        @media (width <= 1200px) {
-            padding: var(--padding);
-        }
 
         @media (width <= 450px) {
             padding: 1.5rem;

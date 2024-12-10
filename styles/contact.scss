@@ -1,10 +1,19 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    &__text-wrapper {
+        margin-bottom: 2rem;
+    }
 
-   &__description {
-       margin-bottom: 2rem;
-   }
+    .button-wrapper {
+        @media (width < 550px) {
+            flex-direction: column;
+
+            width: 100%;
+        }
+    }
+
+    .button {
+        @media (width < 550px) {
+            width: 200px;
+        }
+    }
 }
