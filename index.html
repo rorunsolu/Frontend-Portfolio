@@ -41,20 +41,26 @@
   <body>
 
     <nav>
-      <div class="container-nav nav">
+
+      <div class="container nav">
 
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
           <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
           <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
           <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="https://github.com/rorunsolu" target="_blank">GitHub</a></li>
+          <li class="nav__item"><a class="nav__link" href="https://www.linkedin.com/in/rorunsolu"
+               target="_blank">LinkedIn</a>
+          </li>
         </ul>
 
-        <button class="nav__toggle-open" id="openNavPopup-btn" type="button" onclick="openPopupNav()"><i
+        <button class="nav__toggle-open" id="openNavPopup-btn" type="button"><i
              class="ri-menu-line"></i>
         </button>
 
       </div>
+
     </nav>
 
     <header id="header">
@@ -64,13 +70,17 @@
         <img class="header__image" src="./images/ray-2.jpg" alt="image of Ray Orunsolu" loading="lazy">
 
         <h1 class="header__title">Hi, I'm
-          <span>Ray</span>
+          <span>Ray</span> a
+          <span>Frontend Developer</span>
           <span class="wave">👋</span>
-          <br>a
-          <span class="text-gradient">Frontend Developer.</span>
         </h1>
 
-        <a class="button" href="#projects">My Work</a>
+        <div class="button-wrapper">
+          <a class="button button--primary" href="#projects">My Work</a>
+          <a href="mailto:rorunsolu@gmail.com" class="button button--secondary"
+             aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"><i
+               class="ri-mail-line"></i> Contact Me</a>
+        </div>
 
       </div>
 
@@ -87,17 +97,44 @@
           <div class="projects__card-wrapper">
 
             <article class="projects__card">
+              <img class="projects__card-icon" src="./images/notepad-icon.png"
+                   alt="icon representing a notepad" loading="lazy">
+              <h3 class="projects__card-title">Notepad App V2</h3>
+              <ul class="projects__card-skills">
+                <li class="projects__card-skill">JavaScript</li>
+                <li class="projects__card-skill">SCSS</li>
+                <li class="projects__card-skill">HTML</li>
+              </ul>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://notepad-v2.vercel.app/" target="_blank" rel="noopener"
+                   aria-label="View the Notepad App project in a new tab"
+                   title="Notepad App project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/notepad-app-v2" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Notepad App project on GitHub"
+                   title="Notepad App GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
+            </article>
+
+            <article class="projects__card">
               <img class="projects__card-icon" src="./images/real-estate-icon.png"
                    alt="icon representing a building" loading="lazy">
               <h3 class="projects__card-title">Real Estate Website</h3>
               <ul class="projects__card-skills">
-                <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
                 <li class="projects__card-skill">JavaScript</li>
+                <li class="projects__card-skill">SCSS</li>
+                <li class="projects__card-skill">HTML</li>
               </ul>
-              <a class="button" href="https://real-estate-website-pi-ten.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Real Estate Website project in a new tab"
-                 title="Real Estate Website project link">View Project</a>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://real-estate-website-pi-ten.vercel.app/" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Real Estate Website project in a new tab"
+                   title="Real Estate Website project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/real-estate-website"
+                   target="_blank" rel="noopener"
+                   aria-label="View the Real Estate Website project on GitHub"
+                   title="Real Estate Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
             </article>
 
             <article class="projects__card">
@@ -105,13 +142,20 @@
                    alt="icon representing a game controller" loading="lazy">
               <h3 class="projects__card-title">Game Store Website</h3>
               <ul class="projects__card-skills">
-                <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
                 <li class="projects__card-skill">JavaScript</li>
+                <li class="projects__card-skill">SCSS</li>
+                <li class="projects__card-skill">HTML</li>
               </ul>
-              <a class="button" href="https://game-store-drab.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Game Store Website project in a new tab"
-                 title="Game Store Website project link">View Project</a>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://game-store-drab.vercel.app/" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Game Store Website project in a new tab"
+                   title="Game Store Website project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/game-store-website"
+                   target="_blank" rel="noopener"
+                   aria-label="View the Game Store Website project on GitHub"
+                   title="Game Store Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
             </article>
 
             <article class="projects__card">
@@ -119,27 +163,20 @@
                    alt="icon representing a camera" loading="lazy">
               <h3 class="projects__card-title">Photography Website</h3>
               <ul class="projects__card-skills">
-                <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
                 <li class="projects__card-skill">JavaScript</li>
-              </ul>
-              <a class="button" href="https://photography-website-self.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Photography Website project in a new tab"
-                 title="Photography Website project link">View Project</a>
-            </article>
-
-            <article class="projects__card">
-              <img class="projects__card-icon" src="./images/notepad-icon.png"
-                   alt="icon representing a notepad" loading="lazy">
-              <h3 class="projects__card-title">Notepad App</h3>
-              <ul class="projects__card-skills">
+                <li class="projects__card-skill">SCSS</li>
                 <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
-                <li class="projects__card-skill">JavaScript</li>
               </ul>
-              <a class="button" href="https://notepad-app-drab.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Notepad App project in a new tab"
-                 title="Notepad App project link">View Project</a>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://photography-website-self.vercel.app/" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Photography Website project in a new tab"
+                   title="Photography Website project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/photography-website"
+                   target="_blank" rel="noopener"
+                   aria-label="View the Photography Website project on GitHub"
+                   title="Photography Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
             </article>
 
             <article class="projects__card">
@@ -147,98 +184,41 @@
                    alt="icon representing financial technology" loading="lazy">
               <h3 class="projects__card-title">Fintech Website</h3>
               <ul class="projects__card-skills">
-                <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
                 <li class="projects__card-skill">JavaScript</li>
+                <li class="projects__card-skill">SCSS</li>
+                <li class="projects__card-skill">HTML</li>
               </ul>
-              <a class="button" href="https://fintech-website-six.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Fintech Website project in a new tab"
-                 title="Fintech Website project link">View Project</a>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://fintech-website-six.vercel.app/" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Fintech Website project in a new tab"
+                   title="Fintech Website project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/fintech-website" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Fintech Website project on GitHub"
+                   title="Fintech Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
             </article>
-
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/holiday-icon.png"
                    alt="icon representing a beach" loading="lazy">
               <h3 class="projects__card-title">Holiday Website</h3>
               <ul class="projects__card-skills">
-                <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
                 <li class="projects__card-skill">JavaScript</li>
-              </ul>
-              <a class="button" href="https://holiday-pearl-ten.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Holiday Website project in a new tab"
-                 title="Holiday Website project link">View Project</a>
-            </article>
-
-            <!-- <article class="projects__card">
-              <img class="projects__card-icon" src="./images/coaching-icon.png"
-                   alt="icon representing business coaching" loading="lazy">
-              <h3 class="projects__card-title">Business Coaching Website</h3>
-              <ul class="projects__card-skills">
+                <li class="projects__card-skill">SCSS</li>
                 <li class="projects__card-skill">HTML</li>
-                <li class="projects__card-skill">CSS</li>
-                <li class="projects__card-skill">JavaScript</li>
               </ul>
-              <a class="button" href="https://business-coaching-sigma.vercel.app/" target="_blank" rel="noopener"
-                 aria-label="View the Business Coaching Website project in a new tab"
-                 title="Business Coaching Website project link">View Project</a>
-            </article> -->
-
-          </div>
-
-
-        </div>
-
-      </section>
-
-      <section id="about">
-
-        <div class="container about">
-
-          <div class="about__header-wrapper">
-            <h2 class="about__title">About Me</h2>
-            <p class="about__description">Hi! I'm Ray, a frontend developer based in London. I enjoy building
-              stylish, functional and responsive websites that provide a great user experience. I'm always
-              looking for new challenges and opportunities to expand my skill set.</p>
-          </div>
-
-          <img class="about__image" src="./images/ray.jpg" alt="image of Ray" loading="lazy">
-
-        </div>
-
-      </section>
-
-      <section id="offer">
-
-        <div class="container offer">
-
-          <h2 class="offer__title">What I Can Offer</h2>
-          <p class="offer__description">I provide tailored web design and development services, transforming your ideas
-            into
-            visually appealing and fully functional websites.</p>
-
-          <div class="offer__card-grid">
-
-            <article class="offer__card">
-              <h3 class="offer__card-title">Responsive Design</h3>
-              <p class="offer__card-description">Crafted to be fully responsive across all devices and screen sizes,
-                ensuring a
-                seamless user experience everywhere.</p>
-            </article>
-
-            <article class="offer__card">
-              <h3 class="offer__card-title">Search Engine Optimization</h3>
-              <p class="offer__card-description">Enhance your website's visibility and drive more organic traffic with
-                tailored SEO
-                strategies, including keyword optimization and link building.</p>
-            </article>
-
-            <article class="offer__card">
-              <h3 class="offer__card-title">Optimized UI/UX</h3>
-              <p class="offer__card-description">I design fast, intuitive, and accessible user interfaces that
-                prioritize usability,
-                creating an engaging experience for all users.</p>
+              <div class="button-wrapper">
+                <a class="button button--primary" href="https://holiday-pearl-ten.vercel.app/" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Holiday Website project in a new tab"
+                   title="Holiday Website project link">View Website</a>
+                <a class="button button--secondary" href="https://github.com/username/holiday-website" target="_blank"
+                   rel="noopener"
+                   aria-label="View the Holiday Website project on GitHub"
+                   title="Holiday Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+              </div>
             </article>
 
           </div>
@@ -281,10 +261,79 @@
 
           </div>
 
-          <div class="buttons-wrapper">
-            <a class="button" href="https://lime-amye-47.tiiny.site" target="_blank"
+          <div class="button-wrapper">
+            <a class="button button--primary" href="https://lime-amye-47.tiiny.site" target="_blank"
                rel="noopener">Download My
               Resume Here (PDF)</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="about">
+
+        <div class="container about">
+
+          <div class="about__header-wrapper">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">Hi! I'm Ray, a frontend developer based in London. I enjoy building
+              stylish, functional apps and websites that provide a great user experience.</p>
+          </div>
+
+          <img class="about__image" src="./images/ray.jpg" alt="image of Ray" loading="lazy">
+
+        </div>
+
+      </section>
+
+      <section id="offer">
+
+        <div class="container offer">
+
+          <h2 class="offer__title">What I Can Offer</h2>
+          <p class="offer__description">I provide tailored web design and development services, transforming your ideas
+            into
+            visually appealing and fully functional websites.</p>
+
+          <div class="offer__card-grid">
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Responsive Design</h3>
+              <p class="offer__card-description">I create fully responsive websites for seamless experiences across all
+                devices.</p>
+            </article>
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Efficient JavaScript Development</h3>
+              <p class="offer__card-description">I write modular, efficient JavaScript using ES6+ to enhance
+                maintainability.</p>
+            </article>
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">SEO-Optimized Code</h3>
+              <p class="offer__card-description">I use clean HTML and optimized meta tags to boost search rankings and
+                speed.</p>
+            </article>
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Performance-Driven UI/UX</h3>
+              <p class="offer__card-description">I design accessible, high-performance interfaces for fast and engaging
+                experiences.
+              </p>
+            </article>
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Cross-Browser Compatibility</h3>
+              <p class="offer__card-description">I ensure consistent functionality and seamless performance across all
+                browsers.</p>
+            </article>
+
+            <article class="offer__card">
+              <h3 class="offer__card-title">Web Accessibility Compliance</h3>
+              <p class="offer__card-description">I build inclusive websites following WCAG standards for all users.</p>
+            </article>
+
           </div>
 
         </div>
@@ -295,19 +344,22 @@
 
         <div class="container contact">
 
-          <h2 class="contact__title">Get in Contact</h2>
-          <p class="contact__description">I'd love to hear from you! Feel free to contact me.</p>
-          <a href="mailto:rorunsolu@gmail.com" class="button"
-             aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com">Reach
-            Out</a>
+          <div class="contact__text-wrapper">
+            <h2 class="contact__title">Get in Contact</h2>
+            <p class="contact__description">I'd love to hear from you! Feel free to contact me.</p>
+          </div>
 
-          <div class="buttons-wrapper">
-            <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
-               aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
-                 class="ri-github-fill"></i></a>
-            <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
+          <div class="button-wrapper">
+            <a href="mailto:rorunsolu@gmail.com" class="button button--primary"
+               aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"><i
+                 class="ri-mail-line"></i> Email Me</a>
+            <a class="button button--secondary" href="https://www.linkedin.com/in/rorunsolu/" target="_blank"
+               rel="noopener"
                aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
-                 class="ri-linkedin-box-fill"></i></a>
+                 class="ri-github-line"></i> My GitHub</a>
+            <a class="button button--primary" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
+               aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
+                 class="ri-linkedin-box-fill"></i> My LinkedIn</a>
           </div>
 
         </div>
@@ -328,56 +380,25 @@
 
     </footer>
 
-    <script>
+    <div class="popup-container">
 
-      function openPopupNav() {
-        const popupNavContainer = document.createElement('div');
+      <div class="popup-nav">
 
-        popupNavContainer.innerHTML = `
+        <button class="nav__toggle-close" type="button"><i class="ri-close-large-line"></i></button>
 
-        <div id="navPopup">
-
-            <button class="nav__toggle-close" id="closeNavPopup-btn" type="button" onclick="closePopupNav()"><i class="ri-close-line"></i>
-            </button>
-
-            <div id="navPopUpLinks">
-              <a href="#home" onclick="closePopupNav()">Home</a>
-              <a href="#about" onclick="closePopupNav()">About</a>
-              <a href="#contact" onclick="closePopupNav()">Contact</a>
-              <a href="#projects" onclick="closePopupNav()">Projects</a>
-            </div>
-
-            <div class="icon-wrapper">
-              <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
-                 aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
-                   class="ri-github-fill"></i></a>
-              <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
-                 aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
-                   class="ri-linkedin-box-fill"></i></a>
-            </div>
-
+        <div class="popup-nav__links">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="https://github.com/rorunsolu" target="_blank">GitHub</a>
+          <a class="nav__link" href="https://www.linkedin.com/in/rorunsolu"
+             target="_blank">LinkedIn</a>
         </div>
 
-        `;
+      </div>
 
-        document.body.style.overflow = 'hidden';
-
-        document.body.appendChild(popupNavContainer);
-      };
-
-      function closePopupNav() {
-        const navPopup = document.getElementById('navPopup');
-        const navPopupLinks = document.querySelectorAll('#navPopUpLinks div');
-        const navPopUpLink = document;
-
-        if (navPopup) {
-          navPopup.remove();
-
-          document.body.style.overflow = 'auto';
-        }
-      };
-
-    </script>
+    </div>
 
   </body>
 
