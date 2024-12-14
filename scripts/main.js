@@ -46,4 +46,27 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     });
+
+    const cards = document.querySelectorAll('article, .about__image');
+
+    const revealCards = () => {
+        const revealTrigger = window.innerHeight * 0.95;
+
+        cards.forEach(card => {
+            const topOfCard = card.getBoundingClientRect().top;
+
+            if (topOfCard < revealTrigger) {
+                card.classList.add('reveal');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', revealCards);
+
+    revealCards();
+
+    document.getElementById('email-link').addEventListener('click', function (event) {
+        event.preventDefault();
+        window.open('mailto:rorunsolu@gmail.com', '_blank');
+    });
 });

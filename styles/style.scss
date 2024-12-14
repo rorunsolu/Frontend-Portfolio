@@ -231,3 +231,29 @@ button {
 .npm {
     color: var(--color-icon-npm);
 }
+
+.projects__card-wrapper,
+.skills__card-grid,
+.offer__card-grid,
+.about__image-wrapper {
+    position: relative;
+}
+
+.projects__card,
+.skills__card,
+.offer__card,
+.about__image {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+}
+
+.projects__card.reveal,
+.skills__card.reveal,
+.offer__card.reveal,
+.about__image.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}

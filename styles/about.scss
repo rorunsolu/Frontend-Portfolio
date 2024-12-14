@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    
+
     &__header-wrapper {
         display: flex;
         flex-direction: column;
@@ -13,10 +13,17 @@
         margin-bottom: var(--margin-bottom);
     }
 
+    &__image-wrapper {
+        max-width: 400px;
+
+        border-radius: var(--border-radius);
+    }
+
     &__image {
         border-radius: var(--border-radius);
 
-        max-width: 400px;
+        width: 100%;
+        height: 100%;
 
         box-shadow: var(--box-shadow);
     }
