@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openNavBtn.addEventListener('click', () => {
         if (popupContainer) {
-            //popupContainer.style.display = 'flex';
             popupContainer.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -28,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeNavBtn = popupContainer.querySelector('.nav__toggle-close');
 
     closeNavBtn.addEventListener('click', () => {
-        //popupContainer.style.display = 'none';
         popupContainer.classList.remove('active');
         document.body.style.overflow = 'auto';
     });
@@ -37,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            //popupContainer.style.display = 'none';
             popupContainer.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
@@ -45,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     popupContainer.addEventListener('click', (event) => {
         if (event.target === popupContainer) {
-            //popupContainer.style.display = 'none';
             popupContainer.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
