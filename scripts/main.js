@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('article, .about__image');
 
     const revealCards = () => {
-        const revealTrigger = window.innerHeight * 0.95;
+        const revealTrigger = window.innerHeight * 0.90;
 
         cards.forEach(card => {
             const topOfCard = card.getBoundingClientRect().top;
