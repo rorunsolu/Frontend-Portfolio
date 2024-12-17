@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             navbarImage.style.transform = 'translateX(-90px)';
             //navbarList.style.transform = 'translateX(-90px)';
-            navbarList.style.transform = 'translateX(-85px)';
+            navbarList.style.transform = 'translateX(-75px)';
             navbarImage.style.opacity = '0';
         }
     };

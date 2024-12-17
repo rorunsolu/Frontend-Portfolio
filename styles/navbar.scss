@@ -109,13 +109,14 @@ nav {
         margin: 0 1rem;
         margin-left: 90px;
         margin-left: 85px;
+        margin-left: 91px;
 
         position: relative;
 
         background-color: var(--color-white);
 
         transform: translateX(-90px);
-        transform: translateX(-85px);
+        transform: translateX(-75px);
         transition: transform 0.2s ease-out;
 
         @media (width < 850px) {
