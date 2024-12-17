@@ -94,6 +94,8 @@ h2 {
 
     font-size: 2.75rem;
 
+    
+
     @media (width <= 600px) {
         font-size: 2.5rem;
     }
@@ -156,6 +158,8 @@ button {
 article {
     border-left: 6px solid var(--color-blue);
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+    background-color: hsl(0, 0%, 100%);
 }
 
 .container {
@@ -261,4 +265,12 @@ article {
 .about__image.reveal {
     opacity: 1;
     transform: translateY(0);
+}
+
+.slide-in {
+    transform: translateX(0);
+}
+
+.move-aside {
+    transform: translateX(100px);
 }

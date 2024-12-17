@@ -14,6 +14,9 @@ import '/styles/button.scss';
 import '/styles/footer.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    //* ------------------------ Navbar Toggle -------------------------- *//
+
     const openNavBtn = document.querySelector('.nav__toggle-open');
     const popupContainer = document.querySelector('.popup-container');
 
@@ -47,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //* ------------------------ Reveal Cards on Scroll -------------------------- *//
+
     const cards = document.querySelectorAll('article, .about__image');
 
     const revealCards = () => {
@@ -69,4 +74,33 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         window.open('mailto:rorunsolu@gmail.com', '_blank');
     });
+
+    //* ------------------------ Reveal Navbar Image on Scroll -------------------------- *//
+
+   
+    const navbar = document.querySelector('.nav');
+    const navbarImage = document.querySelector('.nav__image');
+    const navbarList = document.querySelector('.nav__list');
+    const headerImage = document.querySelector('.header__image');
+
+    const watchScroll = () => {
+        const navbarBottom = navbar.getBoundingClientRect().bottom;
+        const headerImageBottom = headerImage.getBoundingClientRect().bottom;
+
+        if (navbarBottom > headerImageBottom) {
+            navbarImage.style.transform = 'translateX(32px)';
+            navbarList.style.transform = 'translateX(32px)';
+            navbarImage.style.opacity = '1';
+        } else {
+            navbarImage.style.transform = 'translateX(-90px)';
+            //navbarList.style.transform = 'translateX(-90px)';
+            navbarList.style.transform = 'translateX(-85px)';
+            navbarImage.style.opacity = '0';
+        }
+    };
+
+    //! Honestly I think i should have the navbar have the same width % as the other containers so i dont have to deal with the awkaf placement of the image
+
+    window.addEventListener('scroll', watchScroll);
+
 });
