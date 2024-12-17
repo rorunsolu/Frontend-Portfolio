@@ -70,9 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealCards();
 
-    document.getElementById('email-link').addEventListener('click', function (event) {
-        event.preventDefault();
-        window.open('mailto:rorunsolu@gmail.com', '_blank');
+    //* ------------------------ Open Email Link in New Tab -------------------------- *//
+
+    // document.getElementById('email-link').addEventListener('click', function (event) {
+    //     event.preventDefault();
+    //     window.open('mailto:rorunsolu@gmail.com', '_blank');
+    // });
+
+    document.querySelectorAll('.email-link').forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.open('mailto:rorunsolu@gmail.com', '_blank');
+        });
     });
 
     //* ------------------------ Reveal Navbar Image on Scroll -------------------------- *//
