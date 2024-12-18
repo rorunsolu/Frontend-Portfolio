@@ -11,11 +11,11 @@
 
 .button {
     border-radius: var(--border-radius);
-    padding: var(--padding-btn);
+    padding: 0.75rem 1.25rem;
 
     width: fit-content;
 
-    font-weight: var(--font-weight-btn);
+    font-weight: 500;
 
     &:hover {
         transition: var(--transition);

@@ -1,7 +1,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    //gap: 1rem;
 
     padding: 10rem 0;
     padding-bottom: 5rem;
@@ -47,18 +46,10 @@
     }
 
     .button-wrapper {
-        margin-top: 1rem;
-
         @media (width < 550px) {
             flex-direction: column;
 
             width: 100%;
-        }
-    }
-
-    .button {
-        @media (width < 550px) {
-            width: 160px;
         }
     }
 }

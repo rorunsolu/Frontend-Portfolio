@@ -1,15 +1,14 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-
     &__title {
         margin-bottom: var(--margin-bottom);
     }
 
     &__card-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
-        gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 3rem;
+
+        margin-bottom: 4rem;
 
         @media (width < 450px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,12 +27,12 @@
 
         padding: 2rem;
 
-        @media (width <= 1000px) {
+        @media (width < 450px) {
             padding: 1.5rem;
         }
 
-        @media (width <= 800px) {
-            width: 100%;
+        @media (width < 350px) {
+            padding: 1rem;
         }
     }
 
@@ -67,7 +66,7 @@
 
     .button {
         @media (width < 550px) {
-            width: 200px;
+            width: 175px;
         }
     }
 }

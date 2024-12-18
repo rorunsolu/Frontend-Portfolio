@@ -14,9 +14,6 @@ import '/styles/button.scss';
 import '/styles/footer.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    //* ------------------------ Navbar Toggle -------------------------- *//
-
     const openNavBtn = document.querySelector('.nav__toggle-open');
     const popupContainer = document.querySelector('.popup-container');
 
@@ -50,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    //* ------------------------ Reveal Cards on Scroll -------------------------- *//
-
     const cards = document.querySelectorAll('article, .about__image');
 
     const revealCards = () => {
@@ -70,13 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealCards();
 
-    //* ------------------------ Open Email Link in New Tab -------------------------- *//
-
-    // document.getElementById('email-link').addEventListener('click', function (event) {
-    //     event.preventDefault();
-    //     window.open('mailto:rorunsolu@gmail.com', '_blank');
-    // });
-
     document.querySelectorAll('.email-link').forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();
@@ -84,9 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //* ------------------------ Reveal Navbar Image on Scroll -------------------------- *//
-
-   
     const navbar = document.querySelector('.nav');
     const navbarImage = document.querySelector('.nav__image');
     const navbarList = document.querySelector('.nav__list');
@@ -102,14 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarImage.style.opacity = '1';
         } else {
             navbarImage.style.transform = 'translateX(-90px)';
-            //navbarList.style.transform = 'translateX(-90px)';
             navbarList.style.transform = 'translateX(-75px)';
             navbarImage.style.opacity = '0';
         }
     };
 
-    //! Honestly I think i should have the navbar have the same width % as the other containers so i dont have to deal with the awkaf placement of the image
-
     window.addEventListener('scroll', watchScroll);
-
 });

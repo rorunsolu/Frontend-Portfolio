@@ -10,10 +10,10 @@
 
     &__card-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+        gap: 3rem;
 
-        @media (width < 450px) {
+        @media (width < 650px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
@@ -23,8 +23,12 @@
 
         box-shadow: var(--box-shadow);
 
-        @media (width <= 450px) {
+        @media (width < 450px) {
             padding: 1.5rem;
+        }
+
+        @media (width < 350px) {
+            padding: 1rem;
         }
     }
 
