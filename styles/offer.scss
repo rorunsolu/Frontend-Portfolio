@@ -38,4 +38,21 @@
         background-clip: text;
         color: transparent;
     }
+
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: -1rem;
+        right: -0.7rem;
+
+        width: 2rem;
+        height: 2rem;
+
+        font-size: 2rem;
+
+        color: var(--color-blue);
+    }
 }
