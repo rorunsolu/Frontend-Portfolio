@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Ray's Portfolio</title>
+    <title>Ray Orunsolu | Frontend Developer Portfolio</title>
 
     <meta name="description"
           content="Explore my frontend developer portfolio showcasing skills in HTML, CSS, JavaScript, and responsive web design.">
@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
           rel="stylesheet">
 
-    <script type="module" src="/scripts/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 
   </head>
 
@@ -64,9 +64,27 @@
 
       <div class="container header">
 
+        <div class="header__image-wrapper fade-in delayed">
+
         <img class="header__image" src="./images/ray-2.jpg" alt="image of Ray Orunsolu">
 
-        <div class="header__text-wrapper">
+          <div class="header__icons-wrapper">
+
+            <!-- <span class="header__icons" id="react-icon"><i class="fa-brands fa-react react"></i></span>
+            <span class="header__icons" id="js-icon"><i class="fa-brands fa-square-js js"></i></span>
+            <span class="header__icons" id="html-icon"><i class="fa-brands fa-html5 html"></i></span>
+            <span class="header__icons" id="scss-icon"><img src="./images/scss-icon.png" alt="scss logo"></span>
+            <span class="header__icons" id="css-icon"><i class="fa-brands fa-css3-alt css"></i></span>
+            <span class="header__icons" id="npm-icon"><i class="fa-brands fa-npm npm"></i></span>
+            <span class="header__icons" id="git-icon"><i class="fa-brands fa-git-alt git"></i></span> -->
+
+          </div>
+
+        </div>
+
+        <div class="header__text-wrapper fade-in">
+
+          <p class="header__subtitle">Based in London, UK</p>
 
           <h1 class="header__title">Hi I'm
             <span>Ray,</span> a
@@ -78,7 +96,7 @@
 
         </div>
 
-        <div class="button-wrapper">
+        <div class="button-wrapper fade-in">
           <a class="button button--primary" href="https://lime-amye-47.tiiny.site" target="_blank"
              rel="noopener"><i class="ri-download-cloud-line"></i> Download My
             Resume</a>
@@ -98,14 +116,14 @@
 
         <div class="container projects">
 
-          <h2 class="projects__title">My Projects</h2>
+          <h2 class="projects__title">Personal Projects</h2>
 
           <div class="projects__card-wrapper">
 
             <article class="projects__card">
-              <img class="projects__card-icon" src="./images/notepad.gif"
-                   alt="icon representing a notepad">
-              <h3 class="projects__card-title">Notepad App V2</h3>
+              <img class="projects__card-icon" src="./images/productivity.gif"
+                   alt="icon representing an infinity loop">
+              <h4 class="projects__card-title">Productivity App</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -114,18 +132,18 @@
               <div class="button-wrapper">
                 <a class="button button--primary" href="https://notepad-v2.vercel.app/" target="_blank" rel="noopener"
                    aria-label="View the Notepad App project in a new tab"
-                   title="Notepad App project link"><i class="ri-earth-line"></i> View Website</a>
+                   title="Notepad App project link"><i class="ri-earth-line"></i> View Live App</a>
                 <a class="button button--secondary" href="https://github.com/rorunsolu/notepad-v2" target="_blank"
                    rel="noopener"
                    aria-label="View the Notepad App project on GitHub"
-                   title="Notepad App GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Notepad App GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/fintech.gif"
                    alt="icon representing financial technology">
-              <h3 class="projects__card-title">Fintech Website</h3>
+              <h4 class="projects__card-title">Fintech Website</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -139,14 +157,14 @@
                 <a class="button button--secondary" href="https://github.com/rorunsolu/fintech-website" target="_blank"
                    rel="noopener"
                    aria-label="View the Fintech Website project on GitHub"
-                   title="Fintech Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Fintech Website GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/gamestore.gif"
                    alt="icon representing a game controller">
-              <h3 class="projects__card-title">Game Store Website</h3>
+              <h4 class="projects__card-title">Game Store Website</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -160,14 +178,14 @@
                 <a class="button button--secondary" href="https://github.com/rorunsolu/Game-Store"
                    target="_blank" rel="noopener"
                    aria-label="View the Game Store Website project on GitHub"
-                   title="Game Store Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Game Store Website GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/photography.gif"
                    alt="icon representing a camera">
-              <h3 class="projects__card-title">Photography Website</h3>
+              <h4 class="projects__card-title">Photography Website</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -181,14 +199,14 @@
                 <a class="button button--secondary" href="https://github.com/rorunsolu/Photography-Website"
                    target="_blank" rel="noopener"
                    aria-label="View the Photography Website project on GitHub"
-                   title="Photography Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Photography Website GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/holiday.gif"
                    alt="icon representing a beach">
-              <h3 class="projects__card-title">Holiday Website</h3>
+              <h4 class="projects__card-title">Holiday Booking Website</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -202,14 +220,14 @@
                 <a class="button button--secondary" href="https://github.com/rorunsolu/Holiday-Website" target="_blank"
                    rel="noopener"
                    aria-label="View the Holiday Website project on GitHub"
-                   title="Holiday Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Holiday Website GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
             <article class="projects__card">
               <img class="projects__card-icon" src="./images/realestate.gif"
                    alt="icon representing a building">
-              <h3 class="projects__card-title">Real Estate Website</h3>
+              <h4 class="projects__card-title">Real Estate Website</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
@@ -223,7 +241,7 @@
                 <a class="button button--secondary" href="https://github.com/rorunsolu/Real-Estate-Website"
                    target="_blank" rel="noopener"
                    aria-label="View the Real Estate Website project on GitHub"
-                   title="Real Estate Website GitHub link"><i class="ri-github-line"></i> Github Repo</a>
+                   title="Real Estate Website GitHub link"><i class="ri-github-line"></i> View Code</a>
               </div>
             </article>
 
@@ -243,38 +261,43 @@
       <section id="skills">
 
         <div class="container skills">
-          <h2 class="skills__title">My Skills</h2>
+          <h2 class="skills__title">Tech Stack</h2>
 
           <div class="skills__card-grid">
 
             <article class="skills__card">
               <i class="fa-brands fa-square-js js"></i>
-              <h3 class="skills__card-title">JavaScript</h3>
+              <h4 class="skills__card-title">JavaScript</h4>
             </article>
 
             <article class="skills__card">
               <i class="bx bxl-html5 html"></i>
-              <h3 class="skills__card-title">HTML</h3>
+              <h4 class="skills__card-title">HTML</h4>
             </article>
 
             <article class="skills__card">
               <i class="bx bxl-css3 css"></i>
-              <h3 class="skills__card-title">CSS</h3>
+              <h4 class="skills__card-title">CSS</h4>
             </article>
 
             <article class="skills__card">
               <i class="fa-brands fa-npm npm"></i>
-              <h3 class="skills__card-title">NPM</h3>
+              <h4 class="skills__card-title">NPM</h4>
             </article>
 
             <article class="skills__card">
               <i class="fa-brands fa-git-alt git"></i>
-              <h3 class="skills__card-title">Git</h3>
+              <h4 class="skills__card-title">Git</h4>
             </article>
 
             <article class="skills__card">
               <i class="fa-brands fa-sass scss"></i>
-              <h3 class="skills__card-title">SASS/SCSS</h3>
+              <h4 class="skills__card-title">SASS/SCSS</h4>
+            </article>
+
+            <article class="skills__card">
+              <img class="skills__card-icon" src="./images/Vite.js.svg" alt="icon representing Vite">
+              <h4 class="skills__card-title">Vite</h4>
             </article>
 
           </div>
@@ -283,6 +306,10 @@
             <a class="button button--primary" href="https://lime-amye-47.tiiny.site" target="_blank"
                rel="noopener"><i class="ri-download-cloud-line"></i> Download My
               Resume</a>
+<a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
+               aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"
+               target="_blank"><i
+                 class="ri-mail-line"></i> Contact Me</a>
           </div>
 
         </div>
@@ -295,8 +322,8 @@
 
           <div class="about__header-wrapper">
             <h2 class="about__title">About Me</h2>
-            <p class="about__description">Hi! I'm Ray, a frontend developer based in London. I enjoy building
-              stylish, functional apps and websites that provide a great user experience.</p>
+            <p class="about__description">Hi! I'm Ray, a frontend web developer based in London. I enjoy building
+              stylish, functional web apps and websites that provide a great user experience.</p>
           </div>
 
           <div class="about__image-wrapper">
@@ -319,28 +346,28 @@
           <div class="offer__card-grid">
 
             <article class="offer__card">
-              <h3 class="offer__card-title">Responsive Web Design</h3>
+              <h4 class="offer__card-title">Responsive Web Design</h4>
               <p class="offer__card-description">I create fully responsive websites for seamless experiences across all
                 devices.</p>
                 <i class="ri-check-double-line"></i>
             </article>
 
             <article class="offer__card">
-              <h3 class="offer__card-title">Efficient JavaScript Code</h3>
+              <h4 class="offer__card-title">Efficient JavaScript Code</h4>
               <p class="offer__card-description">I write modular, efficient JavaScript using ES6+ to enhance
                 maintainability.</p>
                 <i class="ri-check-double-line"></i>
             </article>
 
             <article class="offer__card">
-              <h3 class="offer__card-title">SEO-Optimized Code</h3>
+              <h4 class="offer__card-title">SEO-Optimized Code</h4>
               <p class="offer__card-description">I use clean HTML and optimized meta tags to boost search rankings and
                 speed.</p>
                 <i class="ri-check-double-line"></i>
             </article>
 
             <article class="offer__card">
-              <h3 class="offer__card-title">Performance-Driven UI/UX</h3>
+              <h4 class="offer__card-title">Performance-Driven UI/UX</h4>
               <p class="offer__card-description">I design accessible, high-performance interfaces for fast and engaging
                 experiences.
               </p>
@@ -348,14 +375,14 @@
             </article>
 
             <article class="offer__card">
-              <h3 class="offer__card-title">Cross-Browser Compatibility</h3>
+              <h4 class="offer__card-title">Cross-Browser Compatibility</h4>
               <p class="offer__card-description">I ensure consistent functionality and seamless performance across all
                 browsers.</p>
                 <i class="ri-check-double-line"></i>
             </article>
 
             <article class="offer__card">
-              <h3 class="offer__card-title">Web Accessibility Compliance</h3>
+              <h4 class="offer__card-title">Web Accessibility Compliance</h4>
               <p class="offer__card-description">I build inclusive websites following WCAG standards for all users.</p>
               <i class="ri-check-double-line"></i>
             </article>

@@ -1,10 +1,19 @@
 .button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.5rem;
+
+    width: -webkit-fit-content;
+
+    width: -moz-fit-content;
 
     width: fit-content;
 
     @media (width < 450px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
@@ -13,44 +22,53 @@
     border-radius: var(--border-radius);
     padding: 0.75rem 1.25rem;
 
+    width: -webkit-fit-content;
+
+    width: -moz-fit-content;
+
     width: fit-content;
 
     font-weight: 500;
 
     &:hover {
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
         transition: var(--transition);
     }
 
     &:active {
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
         transition: var(--transition);
     }
-}
-.button--primary {
-    border: 2px solid transparent;
 
-    color: var(--color-white);
-    background-color: var(--color-blue);
+    &--primary {
+        border: 2px solid transparent;
 
-    &:hover {
-        background-color: var(--color-blue-secondary);
+        color: var(--color-white);
+        background-color: var(--color-blue);
+
+        &:hover {
+            background-color: var(--color-blue-secondary);
+        }
+
+        &:active {
+            background-color: var(--color-white-secondary);
+        }
     }
 
-    &:active {
-        background-color: var(--color-white-secondary);
-    }
-}
+    &--secondary {
+        border: 2px solid var(--color-blue);
 
-.button--secondary {
-    border: 2px solid var(--color-blue);
+        color: var(--color-blue);
+        background-color: var(--color-white);
 
-    color: var(--color-blue);
-    background-color: var(--color-white);
+        &:hover {
+            background-color: var(--color-white-secondary);
+        }
 
-    &:hover {
-        background-color: var(--color-white-secondary);
-    }
-
-    &:active {
-        background-color: var(--color-blue-secondary);
+        &:active {
+            background-color: var(--color-blue-secondary);
+        }
     }
 }

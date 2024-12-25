@@ -4,6 +4,7 @@
     }
 
     &__card-wrapper {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
         gap: 3rem;
@@ -20,8 +21,15 @@
     }
 
     &__card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+
+        -webkit-box-shadow: var(--box-shadow);
 
         box-shadow: var(--box-shadow);
 
@@ -37,6 +45,8 @@
     }
 
     &__card-skills {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 0.5rem;
 
@@ -58,6 +68,9 @@
 
     .button-wrapper {
         @media (width < 550px) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
 
             width: 100%;
@@ -69,35 +82,4 @@
             width: 175px;
         }
     }
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(14deg);
-    }
-    20% {
-        transform: rotate(-8deg);
-    }
-    30% {
-        transform: rotate(14deg);
-    }
-    40% {
-        transform: rotate(-4deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-.projects__card:hover .projects__card-icon {
-    animation: wave 1s ease-in-out 1;
 }
