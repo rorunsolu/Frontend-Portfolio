@@ -14,7 +14,8 @@
     &__card-grid {
         display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         gap: 3rem;
 
         margin-bottom: 4rem;
@@ -37,6 +38,7 @@
         align-items: center;
         gap: 1rem;
 
+        //padding: 2rem;
         padding: 2rem;
 
         -webkit-box-shadow: var(--box-shadow);
