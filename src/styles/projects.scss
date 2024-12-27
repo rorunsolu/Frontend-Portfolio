@@ -79,7 +79,7 @@
 
     .button {
         @media (width < 550px) {
-            width: 175px;
+            max-width: 220px;
         }
     }
 }
