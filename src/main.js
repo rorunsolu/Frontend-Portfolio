@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const cards = document.querySelectorAll('article, .about__image');
+    const cards = document.querySelectorAll('article, .contact__image-wrapper');
 
     const revealCards = () => {
         const revealTrigger = window.innerHeight * 0.90;

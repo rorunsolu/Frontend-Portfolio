@@ -41,6 +41,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 5rem 0 0 0;
     font-size: 16px;
 }
 
@@ -52,8 +53,7 @@ body {
     line-height: 1.6;
 
     color: var(--color-black);
-    //background-color: var(--color-white);
-    background-color: hsl(0, 0%, 99%);
+    background-color: hsl(0, 0%, 100%);
 
     min-height: 100vh;
 }
@@ -182,7 +182,7 @@ article {
     width: 80%;
 
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1700px;
 
     position: relative;
 
@@ -322,8 +322,9 @@ article {
 .projects__card-wrapper,
 .skills__card-grid,
 .offer__card-grid,
-.about__image-wrapper,
+.about__card-grid,
 .experience__card-wrapper,
+.contact__image-wrapper,
 #header {
     position: relative;
 }
@@ -331,8 +332,9 @@ article {
 .projects__card,
 .skills__card,
 .offer__card,
-.about__image,
-.experience__card {
+.about__card,
+.experience__card,
+.contact__image-wrapper {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
@@ -342,8 +344,9 @@ article {
 .projects__card,
 .skills__card,
 .offer__card,
-.about__image,
-.experience__card {
+.about__card,
+.experience__card,
+.contact__image-wrapper {
     opacity: 0;
 
     -webkit-transform: translateY(100px);
