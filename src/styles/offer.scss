@@ -13,11 +13,11 @@
         max-width: 800px;
     }
 
-    &__card-grid {
+    &__card-wrapper {
         display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 3rem;
+        gap: 1.5rem;
 
         @media (width < 650px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -25,7 +25,7 @@
     }
 
     &__card {
-        padding: 2rem;
+        padding: var(--padding);
 
         -webkit-box-shadow: var(--box-shadow);
 
@@ -69,6 +69,29 @@
 
         font-size: 2rem;
 
-        color: var(--color-blue);
+        color: var(--primary-color);
     }
 }
+
+.offer__card-wrapper {
+    position: var(--position);
+}
+
+// .offer__card {
+//     opacity: var(--starting-opacity);
+
+//     -webkit-transform: translateY(var(--move-down));
+//     -ms-transform: translateY(var(--move-down));
+//     transform: translateY(var(--move-down));
+
+//     -webkit-transition:
+//         opacity var(--fade-into-view),
+//         -webkit-transform var(--fade-into-view);
+//     transition:
+//         opacity var(--fade-into-view),
+//         transform var(--fade-into-view),
+//         -webkit-transform var(--fade-into-view);
+//     -o-transition:
+//         opacity var(--fade-into-view),
+//         transform var(--fade-into-view);
+// }

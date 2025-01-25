@@ -8,8 +8,6 @@
 
         border-radius: var(--border-radius);
 
-        //opacity: 0;
-
         @media (width < 375px) {
             max-width: 100%;
             height: 100%;
@@ -19,13 +17,10 @@
     &__image {
         border-radius: var(--border-radius);
 
-        //width: 100%;
         height: 100%;
 
-        //border-radius: 50%;
-
-        -webkit-box-shadow: var(--box-shadow);
-        box-shadow: var(--box-shadow);
+        //-webkit-box-shadow: var(--box-shadow);
+        //box-shadow: var(--box-shadow);
     }
 
     .button-wrapper {
@@ -47,3 +42,26 @@
         }
     }
 }
+
+.contact__image-wrapper {
+    position: var(--position);
+}
+
+// .contact__image {
+//     opacity: var(--starting-opacity);
+
+//     -webkit-transform: translateY(var(--move-down));
+//     -ms-transform: translateY(var(--move-down));
+//     transform: translateY(var(--move-down));
+
+//     -webkit-transition:
+//         opacity var(--fade-into-view),
+//         -webkit-transform var(--fade-into-view);
+//     transition:
+//         opacity var(--fade-into-view),
+//         transform var(--fade-into-view),
+//         -webkit-transform var(--fade-into-view);
+//     -o-transition:
+//         opacity var(--fade-into-view),
+//         transform var(--fade-into-view);
+// }

@@ -23,11 +23,11 @@
         margin-bottom: var(--margin-bottom);
     }
 
-    &__card-grid {
+    &__card-wrapper {
         display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 3rem;
+        gap: 1.5rem;
 
         @media (width < 650px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -35,7 +35,7 @@
     }
 
     &__card {
-        padding: 2rem;
+        padding: var(--padding);
 
         -webkit-box-shadow: var(--box-shadow);
 
@@ -50,7 +50,7 @@
         }
     }
 
-        &__card-title {
+    &__card-title {
         background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
         background: -o-linear-gradient(left, #ff8a00, #da1b60);
         background: linear-gradient(to right, #ff8a00, #da1b60);
@@ -79,6 +79,12 @@
 
         font-size: 2rem;
 
-        color: var(--color-blue);
+        color: var(--primary-color);
+
+        display: none;
     }
+}
+
+.about__card-wrapper {
+    position: var(--position);
 }

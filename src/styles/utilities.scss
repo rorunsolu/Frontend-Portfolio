@@ -1,0 +1,336 @@
+/* General */
+
+.container {
+    width: 85%;
+
+    margin: 0 auto;
+    max-width: 1700px;
+
+    position: relative;
+
+    @media (width < 600px) {
+        width: 90%;
+    }
+
+    @media (width < 400px) {
+        width: 95%;
+    }
+}
+
+#blurred-circle {
+    position: fixed;
+    top: -35.625rem;
+    left: 15%;
+
+    height: 62.5rem;
+    width: 62.5rem;
+
+    overflow: hidden;
+
+    background-image: var(--blurred-circle);
+}
+
+/* Fancy buttons */
+
+#scrollPageBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 0;
+    border-radius: 50%;
+
+    will-change: transform;
+
+    background: var(--bg-btn);
+
+    i {
+        color: var(--base-color);
+    }
+
+    &:hover {
+        transform: translateY(-0.2rem);
+    }
+
+    display: none;
+}
+
+#theme-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+    padding: 0;
+    border-radius: 50%;
+
+    will-change: transform;
+
+    background: var(--bg-btn);
+
+    @media (max-width: 950px) {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    i {
+        color: var(--base-color);
+    }
+
+    &:hover {
+        transform: translateY(-0.2rem);
+    }
+}
+
+#theme-switch i:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch i:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch i:last-child {
+    display: block;
+}
+
+/* Animations */
+
+article {
+    /* Scroll reveal */
+
+    opacity: var(--starting-opacity);
+
+    -webkit-transform: translateY(var(--move-down));
+    -ms-transform: translateY(var(--move-down));
+    transform: translateY(var(--move-down));
+
+    -webkit-transition:
+        opacity var(--fade-into-view),
+        -webkit-transform var(--fade-into-view);
+    transition:
+        opacity var(--fade-into-view),
+        transform var(--fade-into-view),
+        -webkit-transform var(--fade-into-view);
+    -o-transition:
+        opacity var(--fade-into-view),
+        transform var(--fade-into-view);
+
+    /* Spotlight effect */
+
+    position: relative;
+
+    //transition: background 0.1s;
+
+    &:hover {
+        /* Spotlight effect */
+        --active: 1;
+    }
+
+    &:after {
+        /* Spotlight effect */
+
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: radial-gradient(
+            circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+            hsl(0 0% 100% / 0.15),
+            transparent 15vmin
+        );
+        background-attachment: fixed;
+        opacity: var(--active, 0);
+
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+                circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+                hsl(0 0% 100% / 0.5),
+                transparent 15vmin
+            ),
+            transparent;
+        background-attachment: fixed;
+        pointer-events: none;
+        mask:
+            linear-gradient(white, white) 50% 0 / 100% 2.4px no-repeat,
+            linear-gradient(white, white) 50% 100% / 100% 2.4px no-repeat,
+            linear-gradient(white, white) 0 50% / 2.4px 100% no-repeat,
+            linear-gradient(white, white) 100% 50% / 2.4px 100% no-repeat;
+    }
+}
+
+.wave {
+    display: inline-block;
+
+    -webkit-animation-name: wave-animation;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 70% 70%;
+
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -ms-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+
+    @keyframes wave-animation {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        10% {
+            -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+        }
+
+        20% {
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+
+        30% {
+            -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+        }
+
+        40% {
+            -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+        }
+
+        60% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+
+    @-webkit-keyframes wave-animation {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        10% {
+            -webkit-transform: rotate(14deg);
+        }
+
+        20% {
+            -webkit-transform: rotate(-8deg);
+        }
+
+        30% {
+            -webkit-transform: rotate(14deg);
+        }
+
+        40% {
+            -webkit-transform: rotate(-4deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(10deg);
+        }
+
+        60% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(0deg);
+        }
+    }
+}
+
+.reveal {
+    opacity: var(--ending-opacity);
+
+    -webkit-transform: var(--move-back);
+    -ms-transform: var(--move-back);
+    transform: var(--move-back);
+}
+
+.slide-in {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.move-aside {
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+}
+
+/* Colors */
+
+.icon {
+    margin-bottom: 0.5rem;
+
+    font-size: 3rem;
+
+    color: var(--bg-btn);
+}
+
+.html {
+    color: var(--color-icon-html);
+}
+
+.css {
+    color: var(--color-icon-css);
+}
+
+.git {
+    color: var(--color-icon-git);
+}
+
+.js {
+    color: var(--color-icon-js);
+}
+
+.npm {
+    color: var(--color-icon-npm);
+}
+
+.scss {
+    color: var(--color-icon-scss);
+}
+
+.react {
+    color: var(--color-icon-react);
+}
+
+.tailwind {
+    color: var(--color-icon-tailwind);
+}

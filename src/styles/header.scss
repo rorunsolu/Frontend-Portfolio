@@ -38,24 +38,10 @@ header {
 
     height: 100vh;
     height: 100dvh;
+}
 
-    position: relative;
-
-    &::before {
-        content: "";
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        //background-image: url("../src/assets/images/hero.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#header {
+    position: var(--position);
 }
 
 .header {
@@ -84,8 +70,8 @@ header {
 
         overflow: hidden;
 
-        -webkit-box-shadow: var(--box-shadow);
-        box-shadow: var(--box-shadow);
+        //-webkit-box-shadow: var(--box-shadow);
+        //box-shadow: var(--box-shadow);
 
         @media (width < 600px) {
             max-width: 10rem;
@@ -101,8 +87,8 @@ header {
         max-width: 12.5rem;
         max-height: 12.5rem;
 
-        -webkit-box-shadow: var(--box-shadow);
-        box-shadow: var(--box-shadow);
+        //-webkit-box-shadow: var(--box-shadow);
+        //box-shadow: var(--box-shadow);
 
         @media (width < 600px) {
             max-width: 10rem;
@@ -172,9 +158,12 @@ header {
     }
 
     span:not(:nth-child(3)) {
-        background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
-        background: -o-linear-gradient(left, #ff8a00, #da1b60);
-        background: linear-gradient(to right, #ff8a00, #da1b60);
+        // background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
+        // background: -o-linear-gradient(left, #ff8a00, #da1b60);
+        // background: linear-gradient(to right, #ff8a00, #da1b60); /** Text Gradient Example */
+
+        color: #1bc7e4;
+        background-image: linear-gradient(45deg, #1bc7e4 22%, #80ff80 71%, #66cc66 82%);
 
         -webkit-background-clip: text;
         background-clip: text;

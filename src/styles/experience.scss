@@ -8,9 +8,11 @@
         display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
-        gap: 3rem;
+        gap: 1.5rem;
 
-                @media (width < 1500px) {
+        margin-bottom: 4rem;
+
+        @media (width < 1500px) {
             grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
         }
 
@@ -36,11 +38,10 @@
         -ms-flex-direction: column;
         flex-direction: column;
 
-        -webkit-box-shadow: var(--box-shadow);
+        //-webkit-box-shadow: var(--box-shadow);
+        //box-shadow: var(--box-shadow);
 
-        box-shadow: var(--box-shadow);
-
-        padding: 2rem;
+        padding: var(--padding);
 
         @media (width < 450px) {
             padding: 1.5rem;
@@ -54,6 +55,7 @@
             width: 3rem;
             height: 3rem;
 
+            border-radius: var(--border-radius);
             margin-bottom: 0.5rem;
         }
 
@@ -63,12 +65,12 @@
             display: flex;
             gap: 0.5rem;
 
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
 
             li {
                 font-weight: 500;
 
-                color: var(--color-grey);
+                color: var(--text-color-variant);
             }
         }
 
@@ -86,13 +88,13 @@
             line-height: 1.9;
 
             span {
-                color: var(--color-blue);
+                color: var(--primary-color);
             }
         }
     }
 
     .button-wrapper {
-        margin-top: 1rem;
+        margin-top: 2rem;
 
         @media (width < 550px) {
             -webkit-box-orient: vertical;
@@ -106,7 +108,11 @@
 
     .button {
         @media (width < 550px) {
-            width: 175px;
+            //width: 175px;
         }
     }
+}
+
+.experience__card-wrapper {
+    position: var(--position);
 }
