@@ -3,6 +3,7 @@ import './styles/style.scss';
 import './styles/header.scss';
 import './styles/navbar.scss';
 import './styles/footer.scss';
+import './styles/sidebar.scss';
 
 import './styles/experience.scss';
 import './styles/projects.scss';
@@ -14,7 +15,6 @@ import './styles/contact.scss';
 import './styles/button.scss';
 import './styles/utilities.scss';
 import './styles/typography.scss';
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const openNavBtn = document.querySelector('.nav__toggle-open');
@@ -56,6 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open('mailto:rorunsolu@gmail.com', '_blank');
         });
     });
-
-    
 });
