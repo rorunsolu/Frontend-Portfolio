@@ -149,6 +149,7 @@ article {
         content: "";
         position: absolute;
         inset: 0;
+        z-index: 2;
 
         background: radial-gradient(
             circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
@@ -166,6 +167,8 @@ article {
         content: "";
         position: absolute;
         inset: 0;
+        z-index: 2;
+
         background: radial-gradient(
                 circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
                 hsl(0 0% 100% / 0.5),
