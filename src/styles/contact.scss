@@ -1,6 +1,6 @@
 .contact {
     &__text-wrapper {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     &__image-wrapper {
@@ -18,13 +18,10 @@
         border-radius: var(--border-radius);
 
         height: 100%;
-
-        //-webkit-box-shadow: var(--box-shadow);
-        //box-shadow: var(--box-shadow);
     }
 
     .button-wrapper {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         @media (width < 550px) {
             -webkit-box-orient: vertical;
@@ -46,22 +43,3 @@
 .contact__image-wrapper {
     position: var(--position);
 }
-
-// .contact__image {
-//     opacity: var(--starting-opacity);
-
-//     -webkit-transform: translateY(var(--move-down));
-//     -ms-transform: translateY(var(--move-down));
-//     transform: translateY(var(--move-down));
-
-//     -webkit-transition:
-//         opacity var(--fade-into-view),
-//         -webkit-transform var(--fade-into-view);
-//     transition:
-//         opacity var(--fade-into-view),
-//         transform var(--fade-into-view),
-//         -webkit-transform var(--fade-into-view);
-//     -o-transition:
-//         opacity var(--fade-into-view),
-//         transform var(--fade-into-view);
-// }

@@ -1,12 +1,4 @@
 .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
     &__header-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -20,14 +12,16 @@
     }
 
     &__description {
-        margin-bottom: var(--margin-bottom);
+        margin-bottom: 3rem;
     }
 
     &__card-wrapper {
         display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 1.5rem;
+        gap: 1.75rem;
+
+        width: 100%;
 
         @media (width < 650px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -36,10 +30,6 @@
 
     &__card {
         padding: var(--padding);
-
-        -webkit-box-shadow: var(--box-shadow);
-
-        box-shadow: var(--box-shadow);
 
         @media (width < 450px) {
             padding: 1.5rem;
@@ -51,9 +41,9 @@
     }
 
     &__card-title {
-        background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
-        background: -o-linear-gradient(left, #ff8a00, #da1b60);
-        background: linear-gradient(to right, #ff8a00, #da1b60);
+        color: #1bc7e4;
+        background-image: linear-gradient(45deg, #1bc7e4 22%, #80ff80 71%, #66cc66 82%);
+
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;

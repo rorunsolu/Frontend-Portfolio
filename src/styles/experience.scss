@@ -1,6 +1,7 @@
 .experience {
+
     &__subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         margin-top: 3rem;
     }
 
@@ -8,9 +9,11 @@
         display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
-        gap: 1.5rem;
+        gap: 1.75rem;
 
-        margin-bottom: 4rem;
+        width: 100%;
+
+        margin-bottom: 3rem;
 
         @media (width < 1500px) {
             grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
@@ -38,8 +41,8 @@
         -ms-flex-direction: column;
         flex-direction: column;
 
-        //-webkit-box-shadow: var(--box-shadow);
-        //box-shadow: var(--box-shadow);
+        border: none;
+        background: none;
 
         padding: var(--padding);
 
