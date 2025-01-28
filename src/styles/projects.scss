@@ -6,8 +6,6 @@
     &__card-wrapper {
         display: -ms-grid;
         display: grid;
-        //grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        //grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
         gap: 1.75rem;
 
@@ -75,10 +73,6 @@
             z-index: 0;
 
             width: 350px;
-        }
-
-        i {
-            //display: none;
         }
     }
 
