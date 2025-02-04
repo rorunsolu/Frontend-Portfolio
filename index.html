@@ -25,10 +25,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
           rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-                rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
 
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/themeSwitcher.js"></script>
@@ -39,11 +39,6 @@
   </head>
 
   <body>
-
-      <button id="theme-switch">
-        <i class="ri-moon-clear-line"></i>
-        <i class="ri-sun-line"></i>
-      </button>
 
     <nav>
 
@@ -61,14 +56,21 @@
           <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
           <li class="nav__item"><a class="nav__link" href="https://github.com/rorunsolu" target="_blank">GitHub</a>
           </li>
-          <li class="nav__item"><a class="nav__link" href="https://www.linkedin.com/in/rorunsolu"
-               target="_blank">LinkedIn</a>
-          </li>
         </ul>
 
-        <button class="nav__toggle-open" id="openNavPopup-btn" type="button"><i
-             class="ri-menu-line"></i>
-        </button>
+        <!-- <a class="button button--primary nav-button" href="https://lime-amye-47.tiiny.site" target="_blank"
+           rel="noopener"><i class="ri-download-cloud-line"></i> Download My
+          Resume</a> -->
+
+        <div class="nav__btn-wrapper">
+          <button id="theme-switch">
+            <i class="ri-moon-clear-line"></i>
+            <i class="ri-sun-line"></i>
+          </button>
+          <button class="nav__toggle-open" id="openNavPopup-btn" type="button"><i
+               class="ri-menu-line"></i>
+          </button>
+        </div>
 
       </div>
 
@@ -109,7 +111,7 @@
         </div>
 
         <div class="button-wrapper fade-in">
-<!--           <a class="button button--primary header-button" href="https://lime-amye-47.tiiny.site" target="_blank"
+          <!-- <a class="button button--primary header-button" href="https://lime-amye-47.tiiny.site" target="_blank"
              rel="noopener"><i class="ri-download-cloud-line"></i> Download My
             Resume</a> -->
           <a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
@@ -124,6 +126,104 @@
 
     <main>
 
+      <section id="experience">
+
+        <div class="container experience">
+
+          <h2 class="experience__title">My Experience</h2>
+
+          <div class="experience__freelance">
+
+            <h3 class="experience__subtitle">Work History</h3>
+
+            <div class="experience__card-wrapper">
+
+              <article class="experience__card">
+                <img class="experience__card-icon" src="./src/assets/images/avantizon-logo.png"
+                     alt="Avantizon company logo">
+                <h4 class="experience__card-title">Full Stack Developer - Avantizon</h4>
+                <p class="experience__card-date">May 2024 - Present</p>
+                <ul class="experience__card-skills">
+                  <li class="experience__card-skill"><i class="fa-brands fa-react react"></i> React</li>
+                  <li class="experience__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
+                  <li class="experience__card-skill"><i class="ri-tailwind-css-fill tailwind"></i></i> Tailwind</li>
+                </ul>
+                <div class="experience__card-details">
+                  <p class="experience__card-point"><span>&#8226;</span> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos corporis facere sequi aliquid iusto voluptate.</p>
+                  <p class="experience__card-point"><span>&#8226;</span> Cupiditate delectus velit sed distinctio
+                    numquam deleniti doloremque consectetur.</p>
+                  <p class="experience__card-point"><span>&#8226;</span> Ipsa beatae blanditiis eum similique!
+                    Exercitationem voluptate, Vitae.</p>
+                </div>
+              </article>
+
+            </div>
+
+            <h3 class="experience__subtitle">Freelance Projects</h3>
+
+            <div class="experience__card-wrapper">
+
+              <article class="experience__card">
+                <img class="experience__card-icon" src="./src/assets/images/lensonflex.jpg"
+                     alt="Avantizon company logo">
+                <h4 class="experience__card-title">Lensonflex - Photography Website</h4>
+                <ul class="experience__card-skills">
+                  <li class="experience__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
+                  <li class="experience__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
+                  <li class="experience__card-skill"><i class="fa-brands fa-html5 html"></i> HTML</li>
+                </ul>
+                <div class="experience__card-details">
+                  <p class="experience__card-point"><span>&#8226;</span> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos corporis facere sequi aliquid iusto voluptate.</p>
+                </div>
+                <div class="button-wrapper">
+                  <a class="button button--primary" href="http://lensonflex.com" target="_blank" rel="noopener"
+                     aria-label="View Avantizon project website in a new tab" title="Avantizon website link"><i
+                       class="ri-earth-line"></i> View Website</a>
+                </div>
+              </article>
+
+              <article class="experience__card">
+                <img class="experience__card-icon" src="/src/assets/images/placeholder.png"
+                     alt="Adekass Building Contractor LTD company logo">
+                <h4 class="experience__card-title">Adekass Building Contractor LTD</h4>
+                <ul class="experience__card-skills">
+                  <li class="experience__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
+                  <li class="experience__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
+                  <li class="experience__card-skill"><i class="fa-brands fa-html5 html"></i> HTML</li>
+                </ul>
+                <div class="experience__card-details">
+                  <p class="experience__card-point"><span>&#8226;</span> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos corporis facere sequi aliquid iusto voluptate.</p>
+                </div>
+                <div class="button-wrapper">
+                  <a class="button button--primary" href="#" target="_blank" rel="noopener"
+                     aria-label="View Adekass Building Contractor website in a new tab"
+                     title="Adekass Building Contractor website link"><i class="ri-earth-line"></i> View Website</a>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+
+          <div class="button-wrapper">
+            <a class="button button--primary" href="https://lime-amye-47.tiiny.site" target="_blank"
+               rel="noopener"><i class="ri-download-cloud-line"></i> Download My
+              Resume</a>
+            <a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
+               aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"
+               target="_blank"><i
+                 class="ri-mail-line"></i> Email Me</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!--! Fiox the alt tags of all the porjects cards images -->
+
       <section id="projects">
 
         <div class="container projects">
@@ -135,7 +235,6 @@
             <article class="projects__card">
               <img class="projects__card-image" src="./src/assets/images/productivity-app-mockup.png"
                    alt="A screenshot of the Fintech Website">
-              <!-- <i class="ri-infinity-line icon"></i> -->
               <h4 class="projects__card-title">Productivity App</h4>
               <ul class="projects__card-skills">
                 <li class="projects__card-skill"><i class="fa-brands fa-square-js js"></i> JavaScript</li>
@@ -163,7 +262,8 @@
                 <li class="projects__card-skill"><i class="fa-brands fa-sass scss"></i> SCSS</li>
               </ul>
               <div class="button-wrapper">
-                <a class="button button--primary" href="https://zoria-healthcare-react.vercel.app/" target="_blank" rel="noopener"
+                <a class="button button--primary" href="https://zoria-healthcare-react.vercel.app/" target="_blank"
+                   rel="noopener"
                    aria-label="View the New Project Website project in a new tab"
                    title="New Project Website project link"><i class="ri-earth-line"></i> View Website</a>
                 <a class="button button--secondary" href="https://github.com/rorunsolu/Zoria-Healthcare"
@@ -339,7 +439,7 @@
               <h4 class="skills__card-title">SCSS</h4>
             </article>
 
-<!-- <article class="skills__card">
+            <!-- <article class="skills__card">
               <img class="skills__card-icon" src="./src/assets/images/Vite.js.svg" alt="icon representing Vite">
               <h4 class="skills__card-title">Vite</h4>
             </article> -->
@@ -350,7 +450,7 @@
             <!-- <a class="button button--primary" href="https://lime-amye-47.tiiny.site" target="_blank"
                rel="noopener"><i class="ri-download-cloud-line"></i> Download My
               Resume</a> -->
-<a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
+            <a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
                aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"
                target="_blank"><i
                  class="ri-mail-line"></i> Email Me</a>
@@ -372,12 +472,12 @@
 
           <div class="about__card-wrapper">
 
-              <article class="about__card">
-                <h4 class="about__card-title">Responsive Web Design</h4>
-                <p class="about__card-description">I create fully responsive websites for seamless experiences across
-                  all
+            <article class="about__card">
+              <h4 class="about__card-title">Responsive Web Design</h4>
+              <p class="about__card-description">I create fully responsive websites for seamless experiences across
+                all
                 devices.</p>
-                <i class="ri-check-double-line"></i>
+              <i class="ri-check-double-line"></i>
             </article>
 
             <!-- <article class="about__card">
@@ -388,9 +488,9 @@
                 <i class="ri-check-double-line"></i>
               </article> -->
 
-              <article class="about__card">
-                <h4 class="about__card-title">Web Accessibility Compliance</h4>
-                <p class="about__card-description">I build inclusive websites following WCAG standards for all users.
+            <article class="about__card">
+              <h4 class="about__card-title">Web Accessibility Compliance</h4>
+              <p class="about__card-description">I build inclusive websites following WCAG standards for all users.
               </p>
               <i class="ri-check-double-line"></i>
             </article>
@@ -403,12 +503,12 @@
                 <i class="ri-check-double-line"></i>
               </article> -->
 
-              <article class="about__card">
-                <h4 class="about__card-title">Performance-Driven UI/UX</h4>
-                <p class="about__card-description">I design accessible, high-performance interfaces for fast and
-                  engaging
-                  experiences.
-                </p>
+            <article class="about__card">
+              <h4 class="about__card-title">Performance-Driven UI/UX</h4>
+              <p class="about__card-description">I design accessible, high-performance interfaces for fast and
+                engaging
+                experiences.
+              </p>
               <i class="ri-check-double-line"></i>
             </article>
 
@@ -466,21 +566,21 @@
 
       <div class="popup-inner-container">
 
-      <div class="popup-nav">
+        <div class="popup-nav">
 
-        <div class="popup-nav__button-wrapper">
-          <button class="nav__toggle-close" type="button"><i class="ri-close-circle-line"></i></button>
-        </div>
+          <div class="popup-nav__button-wrapper">
+            <button class="nav__toggle-close" type="button"><i class="ri-close-circle-line"></i></button>
+          </div>
 
-        <div class="popup-nav__links">
-          <a class="nav__link" href="https://frontend-portfolio-gamma.vercel.app/">Home</a>
-          <a class="nav__link" href="#about">About</a>
-          <a class="nav__link" href="#contact">Contact</a>
-          <a class="nav__link" href="#projects">Projects</a>
-          <a class="nav__link" href="https://github.com/rorunsolu" target="_blank">GitHub</a>
-          <a class="nav__link" href="https://www.linkedin.com/in/rorunsolu"
-             target="_blank">LinkedIn</a>
-</div>
+          <div class="popup-nav__links">
+            <a class="nav__link" href="https://frontend-portfolio-gamma.vercel.app/">Home</a>
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#contact">Contact</a>
+            <a class="nav__link" href="#projects">Projects</a>
+            <a class="nav__link" href="https://github.com/rorunsolu" target="_blank">GitHub</a>
+            <a class="nav__link" href="https://www.linkedin.com/in/rorunsolu"
+               target="_blank">LinkedIn</a>
+          </div>
 
         </div>
 
