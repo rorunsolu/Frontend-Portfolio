@@ -17,21 +17,6 @@
     }
 }
 
-#blurred-circle {
-    position: fixed;
-    top: -35.625rem;
-    left: 15%;
-
-    height: 62.5rem;
-    width: 62.5rem;
-
-    overflow: hidden;
-
-    background-image: var(--blurred-circle);
-}
-
-/* Fancy buttons */
-
 #scrollPageBtn {
     display: flex;
     justify-content: center;
