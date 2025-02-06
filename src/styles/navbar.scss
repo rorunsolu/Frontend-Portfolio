@@ -38,7 +38,7 @@ nav {
     &__btn-wrapper {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     &__image-wrapper {
@@ -209,5 +209,18 @@ nav {
 
     @media (width < 950px) {
         display: inline-block;
+    }
+}
+
+.nav__toggle-close,
+.nav__toggle-open {
+    will-change: transform;
+
+    &:hover {
+        transform: translateY(-0.2rem);
+
+        @media (width < 500px) {
+            transform: translateY(0rem);
+        }
     }
 }

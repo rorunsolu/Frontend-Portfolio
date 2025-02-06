@@ -49,16 +49,20 @@
 }
 
 #theme-switch {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin-left: auto;
-    padding: 0;
-    border-radius: 50%;
+    //width: 35px;
+    //height: 35px;
+
+    //margin-left: auto;
+    //padding: 0;
+    //border-radius: 50%;
 
     will-change: transform;
 
-    background: var(--bg-btn);
+    //background: var(--bg-btn);
 
     @media (max-width: 950px) {
         bottom: 2rem;
@@ -66,11 +70,19 @@
     }
 
     i {
+        font-size: 1.75rem;
+
         color: var(--base-color);
+            color: var(--text-color);
     }
 
     &:hover {
         transform: translateY(-0.2rem);
+
+        
+        @media (width < 500px) {
+            transform: translateY(0rem);
+        }
     }
 }
 
