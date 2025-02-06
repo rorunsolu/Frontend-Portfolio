@@ -31,7 +31,7 @@
     &__card {
         padding: var(--padding);
 
-        max-height: 275px;
+        max-height: 300px;
 
         @media (width < 450px) {
             padding: 1.5rem;
