@@ -35,6 +35,14 @@ nav {
     padding: 1rem 0;
     padding-right: 1rem;
 
+    &__divider {
+        display: none;
+
+        @media (width < 950px) {
+            display: block;
+        }
+    }
+
     &__btn-wrapper {
         display: flex;
         align-items: center;
