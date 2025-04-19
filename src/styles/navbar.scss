@@ -8,6 +8,8 @@ nav {
 
     width: 100vw;
 
+    list-style: none;
+
     @media (width < 600px) {
         padding-top: 0.75rem;
     }
@@ -152,6 +154,8 @@ nav {
     &__item {
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
+
+        list-style: none;
     }
 
     &__link {

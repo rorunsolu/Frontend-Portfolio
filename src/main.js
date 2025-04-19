@@ -5,7 +5,7 @@ import './styles/navbar.scss';
 import './styles/footer.scss';
 import './styles/sidebar.scss';
 
-import './styles/experience.scss';
+import './styles/employment.scss';
 import './styles/projects.scss';
 import './styles/about.scss';
 import './styles/offer.scss';

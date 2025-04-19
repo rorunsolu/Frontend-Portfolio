@@ -18,6 +18,14 @@
     --margin-bottom: 3rem;
     --padding: 2rem;
 
+    @media (width < 650px) {
+        --padding: 1.5rem;
+    }
+
+    @media (width < 350px) {
+        --padding: 1rem;
+    }
+
     --transition: 0.2s ease-in-out;
 
     --position: relative;
@@ -97,7 +105,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    list-style: none;
     text-decoration: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -111,6 +118,7 @@ html {
 }
 
 body {
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -127,9 +135,7 @@ body {
 section {
     padding: 5rem 0;
 
-    @media (width <= 700px) {
-        padding: 3rem 0;
-    }
+    position: relative;
 }
 
 article {

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+experiewnce.html
+.gitignore
+inspo.png
+src/scrollPage.js
