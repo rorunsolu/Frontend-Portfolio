@@ -1,5 +1,4 @@
 .projects {
-
     &__title {
         margin-bottom: var(--margin-bottom);
     }
@@ -68,7 +67,7 @@
                 color: var(--text-color-variant);
             }
 
-            @media (width < 375px) {
+            @media (width < 450px) {
                 flex-direction: column;
                 gap: 0.25rem;
 
