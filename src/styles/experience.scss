@@ -1,48 +1,4 @@
 .experience {
-    &__freelance {
-    }
-
-    &__subtitle {
-        margin-bottom: 3rem;
-        margin-top: 3rem;
-    }
-
-    &__card-wrapper {
-        display: -ms-grid;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
-        gap: 1.75rem;
-
-        width: 100%;
-
-        margin-bottom: 3rem;
-
-        border: var(--secondary-border);
-        border-left: var(--primary-border);
-        border-radius: var(--border-radius-left) var(--border-radius) var(--border-radius) var(--border-radius-left);
-
-        overflow: hidden;
-
-        background-color: var(--base-color-variant-2);
-        box-shadow: var(--shadow-lg);
-
-        @media (width < 1500px) {
-            grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
-        }
-
-        @media (width < 850px) {
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        }
-
-        @media (width < 450px) {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        @media (width < 280px) {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-    }
-
     &__card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -119,14 +75,4 @@
             width: 100%;
         }
     }
-
-    .button {
-        @media (width < 550px) {
-            //width: 175px;
-        }
-    }
-}
-
-.experience__card-wrapper {
-    position: var(--position);
 }

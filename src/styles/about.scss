@@ -1,20 +1,4 @@
 .about {
-    &__header-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-
-        max-width: 800px;
-    }
-
-    &__description {
-        margin-bottom: 3rem;
-    }
-
     &__card-wrapper {
         display: -ms-grid;
         display: grid;
@@ -31,8 +15,6 @@
     &__card {
         padding: var(--padding);
 
-        max-height: 300px;
-
         @media (width < 450px) {
             padding: 1.5rem;
         }
@@ -41,29 +23,38 @@
             padding: 1rem;
         }
 
-        &-image {
-            min-width: 650px;
+        &-icon {
+            display: flex;
+            align-items: center;
 
-                    @media (width < 650px) {
-            min-width: 450px;
+            margin-bottom: 0.75rem;
+
+            svg {
+                width: 24px;
+                height: 24px;
+
+                stroke: var(--iconColor);
+            }
         }
-        }
-
-        &-description {
-            margin-bottom: 1rem;
-        }
-    }
-
-    &__card-title {
-        color: #1bc7e4;
-        background-image: linear-gradient(45deg, #1bc7e4 22%, #80ff80 71%, #66cc66 82%);
-
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
     }
 }
 
-.about__card-wrapper {
-    position: var(--position);
+.mockup {
+    max-height: 578.87px;
+    max-width: 590px;
+
+    @media (width < 470px) {
+        display: none;
+    }
+}
+
+.mockup-small {
+    display: none;
+
+    max-height: 578.87px;
+    max-width: 284px;
+
+    @media (width < 470px) {
+        display: block;
+    }
 }

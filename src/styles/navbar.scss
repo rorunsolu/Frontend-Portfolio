@@ -20,14 +20,14 @@ nav {
 }
 
 .nav {
-    -webkit-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--shadow);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
     position: relative;
     justify-content: space-between;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
 
     border: var(--secondary-border);
     border-left: var(--primary-border);
@@ -91,7 +91,7 @@ nav {
 
             @media (width < 450px) {
                 width: 40px;
-            height: 40px;
+                height: 40px;
             }
         }
     }
@@ -165,7 +165,7 @@ nav {
         position: relative;
         transition: 0.1s ease-in-out;
 
-        color: var(--text-color);
+        color: var(--blackOrWhite);
         font-weight: 500;
 
         font-size: 1.25rem;
@@ -192,12 +192,6 @@ nav {
         &:hover::before {
             width: 100%;
         }
-    }
-
-    .button {
-        margin-right: 2rem;
-
-        display: none;
     }
 }
 
@@ -246,5 +240,9 @@ nav {
         @media (width < 500px) {
             transform: translateY(0rem);
         }
+    }
+
+    i {
+        color: var(--blackOrWhite);
     }
 }

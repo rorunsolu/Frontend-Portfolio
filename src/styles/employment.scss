@@ -1,34 +1,25 @@
 .employment {
-
-    &__title {
-        
-    }
-    &__card-wrapper {
-        margin-top: 1rem;
-    }
     &__card {
-        border-radius: var(--border-radius-left) var(--border-radius) var(--border-radius) var(--border-radius-left);
-        padding: var(--padding);
-
         overflow: hidden;
-
-        //background-color: var(--base-color-variant-2);
-        //box-shadow: var(--shadow-lg);
-
-        @media (width < 600px) {
-            padding: 0.5rem;
-        }
     }
-    &__card-title {
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 5px;
+    &__card-logo {
+        width: 32px;
+        height: 32px;
+
+        margin-right: 16px;
     }
+
     &__card-subtitle {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 20px;
+
+        margin-bottom: 5px;
     }
     &__card-date {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
     }
     &__card-responsibilities {
         margin-top: 10px;

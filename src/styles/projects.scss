@@ -1,8 +1,4 @@
 .projects {
-    &__title {
-        margin-bottom: var(--margin-bottom);
-    }
-
     &__card-wrapper {
         display: -ms-grid;
         display: grid;
@@ -57,12 +53,18 @@
 
             list-style: none;
 
-            margin-bottom: 3rem;
+            margin-bottom: 24px;
 
             z-index: 1;
 
             li {
-                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
 
                 color: var(--text-color-variant);
             }
@@ -113,10 +115,9 @@
 
     .projects__card-skill-icon {
         position: relative;
-        top: 4px;
 
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
 
         @media (width < 375px) {
             left: -0.15rem;

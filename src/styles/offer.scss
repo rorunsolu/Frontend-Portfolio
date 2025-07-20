@@ -27,9 +27,9 @@
     &__card {
         padding: var(--padding);
 
-        -webkit-box-shadow: var(--box-shadow);
+        -webkit-box-shadow: var(--shadow);
 
-        box-shadow: var(--box-shadow);
+        box-shadow: var(--shadow);
 
         @media (width < 450px) {
             padding: 1.5rem;

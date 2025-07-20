@@ -23,7 +23,7 @@
     will-change: transform;
     border-radius: var(--border-radius);
 
-    padding: 0.75rem 1.25rem;
+    padding: 12px 18px;
 
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -50,7 +50,6 @@
         border: 1.99px solid var(--border-color);
         background-color: var(--base-color);
         background: var(--base-color-variant-2);
-        //background: none;
 
         color: var(--primary-color);
 
