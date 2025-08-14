@@ -21,3 +21,5 @@ themeSwitch.addEventListener("click", () => {
   lightmode = localStorage.getItem("lightmode");
   lightmode !== "active" ? enablelightmode() : disablelightmode();
 });
+
+// I can't be btohered to change the names to darkmode but technically this is darkmode

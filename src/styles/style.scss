@@ -36,42 +36,8 @@
 
     --shadow: 0px 2px 2px rgba(10, 12.67, 18, 0.05);
 
-    --blurred-color-1: hsla(0, 0%, 25%, 70%);
-    --blurred-color-2: hsl(0, 0%, 0%);
-    --blurred-circle: radial-gradient(closest-side, var(--blurred-color-1), var(--blurred-color-2));
+    // Default Light Mode Vars
 
-    // Default Dark Mode Variables
-
-    --blackOrWhite: hsl(0, 0%, 100%);
-    --iconColor: hsla(220, 4%, 82%, 1);
-
-    --base-color: hsl(0, 0%, 0%);
-    --base-color-variant: hsla(0, 0%, 6%, 1%);
-    --base-color-variant-2: hsla(0, 0%, 15%, 40%);
-
-    --text-color: hsla(220, 4%, 80%, 1);
-    --text-color-variant: #cacaca;
-    --text-color-h2: hsla(0, 0%, 97%, 1);
-    --text-color-h3: hsla(0, 0%, 97%, 1);
-
-    --primary-color: hsl(0, 0%, 100%);
-    --accent-color: hsl(0, 0%, 90%);
-
-    --primary-border: 1.99px solid #373a41;
-    --secondary-border: 1.99px solid #373a41;
-    --border-color: #373a41;
-
-    --border-radius: 0.35rem;
-    --border-radius-left: 0.35rem;
-
-    --bg-btn: hsl(0, 0%, 100%);
-
-    --blurred-color-1: hsla(0, 0%, 25%, 70%);
-    --blurred-color-2: hsl(0, 0%, 0%);
-    --blurred-circle: radial-gradient(closest-side, var(--blurred-color-1), var(--blurred-color-2));
-}
-
-.lightmode {
     --blackOrWhite: hsl(0, 0%, 0%);
     --iconColor: var(--blue);
 
@@ -100,10 +66,35 @@
     --primary-border: 4px solid var(--blue);
     --bg-btn: var(--blue);
     --border-color: var(--blue);
+}
 
-    --blurred-color-1: hsl(0, 0%, 100%);
-    --blurred-color-2: hsl(0, 0%, 100%);
-    --blurred-circle: radial-gradient(closest-side, var(--blurred-color-1), var(--blurred-color-2));
+.lightmode {
+    // Default Dark Mode Variables
+    // I can't be btohered to change the name to darkmode
+
+    --blackOrWhite: hsl(0, 0%, 100%);
+    --iconColor: hsla(220, 4%, 82%, 1);
+
+    --base-color: hsl(0, 0%, 0%);
+    --base-color-variant: hsla(0, 0%, 6%, 1%);
+    --base-color-variant-2: hsla(0, 0%, 15%, 40%);
+
+    --text-color: hsla(220, 4%, 80%, 1);
+    --text-color-variant: #cacaca;
+    --text-color-h2: hsla(0, 0%, 97%, 1);
+    --text-color-h3: hsla(0, 0%, 97%, 1);
+
+    --primary-color: hsl(0, 0%, 100%);
+    --accent-color: hsl(0, 0%, 90%);
+
+    --primary-border: 1.99px solid #373a41;
+    --secondary-border: 1.99px solid #373a41;
+    --border-color: #373a41;
+
+    --border-radius: 0.35rem;
+    --border-radius-left: 0.35rem;
+
+    --bg-btn: hsl(0, 0%, 100%);
 }
 
 * {
