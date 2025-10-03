@@ -1,6 +1,8 @@
 .employment {
     &__card {
         overflow: hidden;
+
+        max-width: 1200px;
     }
     &__card-logo {
         width: 32px;
