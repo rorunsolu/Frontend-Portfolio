@@ -1,25 +1,27 @@
-let lightmode = localStorage.getItem("lightmode");
 const themeSwitch = document.getElementById("theme-switch");
+const darkModeClass = "darkmode";
+const themeStorageKey = "lightmode";
 
-const enablelightmode = () => {
-  document.body.classList.add("lightmode");
-  localStorage.setItem("lightmode", "active");
+const updateThemeSwitch = (darkModeEnabled) => {
+  themeSwitch.setAttribute("aria-pressed", String(darkModeEnabled));
+  themeSwitch.setAttribute(
+    "aria-label",
+    darkModeEnabled ? "Switch to light mode" : "Switch to dark mode",
+  );
 };
 
-const disablelightmode = () => {
-  document.body.classList.remove("lightmode");
-  localStorage.setItem("lightmode", null);
-};
-
-// if (lightmode === "active") enablelightmode();
-
-if (lightmode !== "null" && lightmode !== null) {
-  enablelightmode();
-}
+const darkModeEnabled = localStorage.getItem(themeStorageKey) === "active";
+document.body.classList.toggle(darkModeClass, darkModeEnabled);
+updateThemeSwitch(darkModeEnabled);
 
 themeSwitch.addEventListener("click", () => {
-  lightmode = localStorage.getItem("lightmode");
-  lightmode !== "active" ? enablelightmode() : disablelightmode();
-});
+  const enableDarkMode = !document.body.classList.contains(darkModeClass);
+  document.body.classList.toggle(darkModeClass, enableDarkMode);
+  updateThemeSwitch(enableDarkMode);
 
-// I can't be btohered to change the names to darkmode but technically this is darkmode
+  if (enableDarkMode) {
+    localStorage.setItem(themeStorageKey, "active");
+  } else {
+    localStorage.removeItem(themeStorageKey);
+  }
+});

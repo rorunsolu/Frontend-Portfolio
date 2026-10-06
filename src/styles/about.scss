@@ -9,13 +9,14 @@
 
         @media (width < 650px) {
             grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
         }
     }
 
     &__card {
         padding: var(--padding);
 
-        @media (width < 450px) {
+        @media (width < 1275px) {
             padding: 1.5rem;
         }
 
@@ -39,8 +40,12 @@
     }
 }
 
-.mockup {
+.mockup,
+.mockup-small {
     max-height: 578.87px;
+}
+
+.mockup {
     max-width: 590px;
 
     @media (width < 470px) {
@@ -51,7 +56,6 @@
 .mockup-small {
     display: none;
 
-    max-height: 578.87px;
     max-width: 284px;
 
     @media (width < 470px) {

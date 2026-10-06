@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".email-link").forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      window.open("mailto:rorunsolu@gmail.com", "_blank");
+      window.open("mailto:rayorunapps@gmail.com", "_blank");
     });
   });
 });

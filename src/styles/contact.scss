@@ -1,11 +1,10 @@
 .contact {
-
-
     &__text-wrapper {
         margin-bottom: 3rem;
     }
 
     &__image-wrapper {
+        position: var(--position);
         max-width: 275px;
 
         border-radius: var(--border-radius);
@@ -26,29 +25,12 @@
         display: flex;
         gap: 0.75rem;
 
-        //width: 200px;
+        @media (width < 550px) {
+            gap: 0.5rem;
+        }
     }
 
     .button-wrapper {
         margin-bottom: 3rem;
-
-        @media (width < 550px) {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-
-            width: 100%;
-        }
     }
-
-    .button {
-        @media (width < 550px) {
-            width: 200px;
-        }
-    }
-}
-
-.contact__image-wrapper {
-    position: var(--position);
 }

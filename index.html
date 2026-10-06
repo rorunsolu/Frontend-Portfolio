@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>Ray Orunsolu | Frontend Developer Portfolio</title>
+  <title>Ray Orunsolu | Web Developer Portfolio</title>
 
   <meta name="description"
-    content="Explore my frontend developer portfolio showcasing skills in HTML, CSS, JavaScript, and responsive web design.">
+    content="Explore my developer portfolio showcasing skills in HTML, CSS, JavaScript, and responsive web design.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/images/favicon-16x16.png">
@@ -58,14 +58,23 @@
       </ul>
 
       <div class="nav__btn-wrapper">
-        <button id="theme-switch">
-          <i class="ri-moon-clear-line"></i>
-          <i class="ri-sun-line"></i>
+        <button id="theme-switch" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-switch__icon moon-icon" aria-hidden="true"></span>
+          <span class="theme-switch__icon sun-icon" aria-hidden="true"></span>
         </button>
 
         <span class="nav__divider">|</span>
 
-        <button class="nav__toggle-open" id="openNavPopup-btn" type="button"><i class="ri-menu-line"></i>
+        <button class="nav__toggle-open" id="openNavPopup-btn" type="button" aria-label="Open navigation menu">
+
+          <svg class="nav__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path d="M4 6H20M4 12H14M4 18H9" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+          </svg>
         </button>
       </div>
 
@@ -87,7 +96,7 @@
 
         <h1 class="header__title">Hi I'm
           <span>Ray,</span> a
-          <span>Frontend Web Developer</span>
+          <span>Web Developer</span>
           <span class="wave">👋</span>
         </h1>
 
@@ -96,8 +105,8 @@
       <div class="button-wrapper fade-in">
         <a class="button button--primary" href="https://ray-orun.tiiny.site" target="_blank" rel="noopener"><i
             class="ri-download-cloud-line"></i> View Resume</a>
-        <a href="mailto:rorunsolu@gmail.com" class="button button--secondary email-link"
-          aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"
+        <a href="mailto:rayorunapps@gmail.com" class="button button--secondary email-link"
+          aria-label="Send an email to rayorunapps@gmail.com" title="Send an email to rayorunapps@gmail.com"
           target="_blank"><i class="ri-mail-line"></i> Email Me</a>
       </div>
 
@@ -107,57 +116,13 @@
 
   <main>
 
-    <section id="employment">
-
-      <div class="container employment">
-
-        <div class="header-wrapper">
-          <h2>Employment History</h2>
-        </div>
-
-
-        <div class="employment__card">
-
-          <img src="./src/assets/images/avantizon-logo.png" alt="Avantizon logo" class="employment__card-logo">
-          <div class="employment__card-content">
-            <h3 class="employment__card-title">Frontend Developer, Avantizon</h3>
-            <div class="employment__card-subtitle-wrapper">
-              <h4 class="employment__card-subtitle">React / TypeScript / Javascript / Node.js
-              </h4>
-              <p class="employment__card-date">Nov 2024 – Present</p>
-            </div>
-
-            <ul class="employment__card-responsibilities">
-              <li>Took ownership of unit testing accessibility across the application , proactively identifying and
-                resolving WCAG issues
-              </li>
-              <li>Developed data-driven interfaces capable of handling dynamic content while maintaining usability
-                across desktop and mobile devices
-              </li>
-              <li>Built a robust React + TypeScript frontend to manage business service listings, increasing visitor
-                retention while minimizing load times by using React Query for efficient data retrieval and caching</li>
-              <li>Translated UI design requirements into responsive web pages while making iterations directly with
-                stakeholders
-              </li>
-              <li>Architected backend RESTful API services to handle user authentication for the database
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
     <section id="projects">
 
       <div class="container projects">
 
         <div class="header-wrapper">
           <h2>Projects</h2>
-          <p class="subtitle">A selection of my recent frontend projects, each focused on delivering great
+          <p class="subtitle">A selection of my recent projects, each focused on delivering great
             user
             experiences and clean code.</p>
         </div>
@@ -339,6 +304,62 @@
 
     </section>
 
+    <section id="employment">
+
+      <div class="container employment">
+
+        <div class="header-wrapper">
+          <h2>Employment History</h2>
+        </div>
+
+
+        <div class="employment__card">
+
+          <img src="./src/assets/images/avantizon-logo.png" alt="Avantizon logo" class="employment__card-logo">
+          <div class="employment__card-content">
+            <h3 class="employment__card-title">Junior Frontend Developer, Avantizon</h3>
+            <div class="employment__card-subtitle-wrapper">
+              <h4 class="employment__card-subtitle">React / TypeScript / Javascript / Node.js
+              </h4>
+              <p class="employment__card-date">Nov 2024 – Present</p>
+            </div>
+
+            <ul class="employment__card-responsibilities">
+              <li><img class="employment__card-bullet" src="./src/assets/images/tick-svgrepo-com.svg"
+                  alt="tick icon"></img>Took ownership of unit testing accessibility across the application ,
+                proactively identifying and
+                resolving WCAG issues
+              </li>
+              <li><img class="employment__card-bullet" src="./src/assets/images/tick-svgrepo-com.svg"
+                  alt="tick icon">Developed data-driven interfaces capable of handling dynamic content while maintaining
+                usability
+                across desktop and mobile devices
+              </li>
+              <li><img class="employment__card-bullet" src="./src/assets/images/tick-svgrepo-com.svg"
+                  alt="tick icon">Translated UI design requirements into responsive web pages while making iterations
+                directly with
+                stakeholders
+              </li>
+              <li><img class="employment__card-bullet" src="./src/assets/images/tick-svgrepo-com.svg"
+                  alt="tick icon">Architected backend RESTful API services to handle user authentication for the
+                database
+              </li>
+              <li><img class="employment__card-bullet" src="./src/assets/images/tick-svgrepo-com.svg"
+                  alt="tick icon">Built a robust React + TypeScript frontend to manage business service listings,
+                increasing visitor
+                retention while minimizing load times by using React Query for efficient data retrieval and caching</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
     <section id="skills">
 
       <div class="container skills">
@@ -357,18 +378,30 @@
           </article>
 
           <article class="skills__card">
+            <img class="skills__card-image" src="./src/assets/images/js-svgrepo-com.svg" alt="JavaScript logo">
+            <h3 class="skills__card-title">JavaScript</h3>
+          </article>
+
+          <article class="skills__card">
+            <img class="skills__card-image" src="./src/assets/images/sql-database-generic-svgrepo-com.svg"
+              alt="SQL logo">
+            <h3 class="skills__card-title">SQL</h3>
+          </article>
+
+          <article class="skills__card">
             <img class="skills__card-image" src="./src/assets/images/nodejs-svgrepo-com.svg" alt="Node.js logo">
             <h3 class="skills__card-title">Node.js</h3>
           </article>
 
           <article class="skills__card">
-            <img class="skills__card-image" src="./src/assets/images/icons8-express-js-50.png" alt="Express.js logo">
-            <h3 class="skills__card-title">Express.js</h3>
+            <img class="skills__card-image" src="./src/assets/images/postgresql-logo-svgrepo-com.svg"
+              alt="PostgreSQL logo">
+            <h3 class="skills__card-title">PostgreSQL</h3>
           </article>
 
           <article class="skills__card">
-            <img class="skills__card-image" src="./src/assets/images/js-svgrepo-com.svg" alt="JavaScript logo">
-            <h3 class="skills__card-title">JavaScript</h3>
+            <img class="skills__card-image" src="./src/assets/images/icons8-express-js-50.png" alt="Express.js logo">
+            <h3 class="skills__card-title">Express.js</h3>
           </article>
 
           <article class="skills__card">
@@ -474,7 +507,7 @@
               </svg>
             </div>
             <div>
-              <h3 class="about__card-title">Responsive Web Design</h3>
+              <h3 class="about__card-title">Responsive web design</h3>
               <p class="about__card-description">I create fully responsive websites for seamless experiences on all
                 devices.</p>
             </div>
@@ -489,7 +522,7 @@
               </svg>
             </div>
             <div>
-              <h3 class="about__card-title">Performant & Optimized Code</h3>
+              <h3 class="about__card-title">Performant & optimized code</h3>
               <p class="about__card-description">I write efficient and optimized code to ensure high performance and
                 smooth UX.</p>
             </div>
@@ -504,7 +537,7 @@
               </svg>
             </div>
             <div>
-              <h3 class="about__card-title">Web Accessibility Compliance</h3>
+              <h3 class="about__card-title">Web accessibility compliance (WCAG)</h3>
               <p class="about__card-description">I build inclusive websites following WCAG standards for all users.
               </p>
             </div>
@@ -526,8 +559,8 @@
         </div>
 
         <div class="button-wrapper">
-          <a href="mailto:rorunsolu@gmail.com" class="button button--primary email-link"
-            aria-label="Send an email to rorunsolu@gmail.com" title="Send an email to rorunsolu@gmail.com"
+          <a href="mailto:rayorunapps@gmail.com" class="button button--primary email-link"
+            aria-label="Send an email to rayorunapps@gmail.com" title="Send an email to rayorunapps@gmail.com"
             id="email-link"><i class="ri-mail-line" target="_blank"></i> Email Me</a>
           <div class="contact__socials">
             <a class="button button--secondary button--social" href="https://github.com/rorunsolu" target="_blank"
@@ -553,11 +586,22 @@
       <div class="popup-nav">
 
         <div class="popup-nav__button-wrapper">
-          <button class="nav__toggle-close" type="button"><i class="ri-close-circle-line"></i></button>
+          <button class="nav__toggle-close" type="button" aria-label="Close navigation menu">
+            <svg class="nav__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+              <g id="SVGRepo_iconCarrier">
+                <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+            </svg>
+          </button>
         </div>
 
         <div class="popup-nav__links">
-          <a class="nav__link" href="https://frontend-portfolio-gamma.vercel.app/">Home</a>
+          <a class="nav__link" href="https://www.rayorunsolu.com/">Home</a>
           <a class="nav__link" href="#about">About</a>
           <a class="nav__link" href="#contact">Contact</a>
           <a class="nav__link" href="#projects">Projects</a>

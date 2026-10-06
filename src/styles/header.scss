@@ -101,14 +101,14 @@ header {
 
         border-radius: 50%;
 
-        max-width: 12.5rem;
-        max-height: 12.5rem;
+        max-width: 10rem;
+        max-height: 10rem;
 
         box-shadow: var(--shadow);
 
         @media (width < 600px) {
-            max-width: 10rem;
-            max-height: 10rem;
+            max-width: 8rem;
+            max-height: 8rem;
         }
     }
 
@@ -191,17 +191,6 @@ header {
 
         @media (width <= 600px) {
             font-size: 1.25rem;
-        }
-    }
-
-    .button-wrapper {
-        @media (width < 550px) {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-
-            width: 100%;
         }
     }
 }

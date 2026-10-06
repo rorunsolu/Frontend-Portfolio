@@ -4,6 +4,17 @@
 
         max-width: 1200px;
     }
+
+    &__card-subtitle-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media (width <= 500px) {
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
     &__card-logo {
         width: 32px;
         height: 32px;
@@ -11,22 +22,33 @@
         margin-right: 16px;
     }
 
+    &__card-date,
     &__card-subtitle {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-
-        margin-bottom: 5px;
-    }
-    &__card-date {
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
     }
     &__card-responsibilities {
-        margin-top: 10px;
+        margin-top: 16px;
 
-        list-style-type: disc;
-        margin-left: 20px;
+        list-style-type: none;
+        margin-left: 0;
+
+        font-size: 14px;
+        line-height: 24px;
+
+        li {
+            display: grid;
+            grid-template-columns: 16px minmax(0, 1fr);
+            column-gap: 8px;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            margin-top: 4px;
+            filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(4041%) hue-rotate(211deg)
+                brightness(97%) contrast(104%);
+        }
     }
 }
